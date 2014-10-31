@@ -1,0 +1,234 @@
+/* Basic Chart Styles */
+.titleImage{
+    background-color: #000000;
+    width: 720px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+}
+
+.mainContainer{
+    background-color: #000000;
+	position: relative;
+	width: 720px;
+}
+.chartStyle{
+	background-color: #000000;
+	width: 500px;
+	height: 400px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+}
+
+/* Highest Sector Data Styles */
+
+.highestSectorData{
+	background-color: #000000;
+	width: 220px;
+	height: 400px;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	float: left;
+}
+.highestSectorData h3{
+    font-size:12px;
+    margin-top:0px;
+    margin-bottom:20px;
+    font-weight: bold;
+    border-bottom:1px solid;
+    padding-bottom: 5px;}
+
+.highestSectorData h4{
+    font-size:30px;
+    margin-top:-10px;
+    margin-bottom:-10px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.highestSectorData p{
+    font-size:12px;
+    margin-top: 15px;
+    margin-bottom:0px;
+    font-weight: normal;
+    line-height: 14px;
+}
+
+.blueData{
+	color: #3D9CDC;
+	position: absolute;
+	left: 0px;
+	top: 80px;
+}
+
+.orangeData{
+	color: #DD4815;
+	position: absolute;
+	left: 0px;
+	top: 200px;
+}
+
+/* Button Styles */
+
+#actions {
+    float: right;
+    margin: 10px 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.actions-clear {
+    background: #858181;
+    font-size: 12px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    color: #FFF;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.actions-apply {
+	background: #429CD9;
+    margin: 0 0 0 10px;
+    font-size: 12px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    color: #FFF;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+/* Forms Extra Styles*/
+
+.UK-Restyle-gradient {
+    margin-top: 0px;
+    display: block;
+    width: 720px;
+    height: 40px;
+    padding: 15px 0px 0px 0px;
+    background-image: url(../img/hr-gradient.jpg);
+    background-repeat: repeat-x;
+}
+.UK-Restyle-gradient h2 {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #002664;
+}
+
+.formWrapper{
+    top:500px;
+    width: 720px;
+    float: left;
+    background-color: white;
+}
+
+/* Basic White Form Style */
+
+.basic-white {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 720px;
+    background: #FFF;
+    padding: 0px 0px 0px 0px;
+    font: 12px verdana,helvetica,arial,sans-serif;
+    color: #888;
+}
+
+.basic-white h1 {
+    font-size: 14px;
+    padding: 20px 0px 0px 0px;
+    display: block;
+    margin: -10px -15px 30px -10px;;
+    color: #002664;
+}
+
+.basic-white h1>span {
+    display: block;
+    font-size: 12px;
+}
+
+.basic-white label {
+    display: block;
+    margin: 0px;
+}
+
+.basic-white label>span {
+	font-weight:bold;
+    font-size: 12px;
+    float: left;
+    width: 10%;
+    text-align: left;
+    padding-right: 10px;
+    margin-top: 5px;
+    color: #444;
+}
+
+.basic-white input[type="text"], .basic-white input[type="email"], .basic-white textarea, .basic-white select {
+    line-height:15px;
+    font-size: 11px;
+    margin-bottom: 10px;
+ /* border: 1px solid;
+    color: #888;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 40%;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;*/
+}
+.basic-white textarea{
+    padding: 5px 3px 3px 5px;
+}
+
+.basic-white select {
+/*  background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right);
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;*/
+    /*text-indent: 0.01px;*/
+    text-overflow: '';
+    width: 50%;
+/*    height: 35px;
+    line-height: 25px;*/
+}
+
+.basic-white textarea{
+    height:100px;
+}
+
+.basic-white .buttonblue {
+	float: right;
+    background: #429CD9;
+    margin: 0 0 15 10px;
+    font-size: 12px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    color: #FFF;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.basic-white .buttonblue:hover {
+    background: #3885b9;
+}
+
+.basic-white .buttongrey {
+	float: right;
+    background: #858181;
+    font-size: 12px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    color: #FFF;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.basic-white .buttongrey:hover {
+    background: #716E6E;
+}
+

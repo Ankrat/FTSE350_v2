@@ -1,0 +1,88 @@
+//colors
+$color_tundora: #444;
+$color_bon_jour: #dfdfdf;
+$color_san_marino: #4066aa;
+$white: #fff;
+
+//fonts
+$font_0: arial;
+$font_1: verdana;
+$font_2: sans-serif;
+
+//@extend-elements
+%extend_1 {
+  color: $color_tundora;
+  font-family: $font_0, $font_1, $font_2;
+  font-size: 16px;
+}
+
+//original selectors
+%extend_2 {
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+body {
+  @extend %extend_1;
+  margin: 0;
+  padding: 0;
+}
+
+select,
+input,
+textarea {
+  @extend %extend_1;
+}
+
+#main {
+  margin: 0 auto;
+  max-width:980px;
+}
+header {
+  background: url("/img/header.png") no-repeat transparent 0 0;
+  height: 97px;
+}
+
+.main-column {
+  float: left;
+  width: 65%;
+  width: calc('65% - 20px');
+  padding: 10px;
+}
+.right-column {
+  div{
+  background: $color_bon_jour;
+  padding: 10px;
+  height: 900px;
+  }
+  float: left;
+  width: 30%;
+  width: calc('30% - 20px');
+}
+
+.head {
+  background: #4066AA;
+  color: #FFF;
+  cursor: pointer;
+  th {
+    border: none;
+    font-weight: normal;
+  }
+}
+
+.clearfix {
+  zoom: 1;
+  &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@import 'chart';
+@import 'tab';

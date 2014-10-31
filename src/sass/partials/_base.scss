@@ -1,0 +1,45 @@
+// base
+$line-height: 1.4 !default;
+$font-color: #222 !default;
+
+$link-color: #00e !default;
+$link-hover-color: #06e !default;
+$link-visited-color: #551a8b !default;
+
+$selected-font-color: #fff !default;
+$selected-background-color: #ff5e99 !default;
+
+$invalid-background-color: #f0dddd !default;
+
+
+//colors
+$color_tundora: #444;
+$color_bon_jour: #dfdfdf;
+$color_san_marino: #4066aa;
+$white: #fff;
+
+//colors
+$black: #000;
+$color_shakespeare: #3d9cdc;
+$color_trinidad: #dd4815;
+$color_gray: #858181;
+$white: #fff;
+$color_deep_sapphire: #002664;
+$color_suva_gray: #888;
+$color_tundora: #444;
+$color_boston_blue: #3885b9;
+$color_dove_gray: #716e6e;
+
+$border-color: #dfdfdf;
+
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}

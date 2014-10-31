@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>KPMG example - interactive tool</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+</head>
+
+<body>
+  <div id="main" class="group">
+
+    <header class="kpmgHeader">
+    </header>
+
+    <section class="main-column">
+      <div class="chartWrapper">
+        <img src="img/FTSE350title.png" alt="FTSE 350" />
+
+        <div id="chartdiv" class="chartStyle"></div>
+
+        <div class="highestSectorData">
+          <div class="data2014">
+            <h3> 2014 Highest sector result</h3>
+            <h4> 00% </h4>
+            <p> A poor understanding </p>
+          </div>
+          <div class="data2013">
+            <h3> 2013 Highest sector result</h3>
+            <h4> 00% </h4>
+            <p> I don't understand </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabWrapper" id="tab-wrapper">
+        <ul>
+          <li><a href="#explore-tab" >Explore the top issues and trends</a></li>
+          <li><a href="#benchmark-tab" >Benchmark against your company</a></li>
+        </ul>
+        <!-- Explore Tab -->
+        <div class="tab" id="explore-tab" data-tab="explore">
+          <form action="two" method="post" class="basic-white" name="exploreForm">
+
+            <div class="UK-Restyle">
+              <h2 class="UK-Restyle-gradient"> Explore the top issues and trends </h2>
+            </div>
+
+            <p><strong> Question </strong> (Select new question to view data)<strong>: </strong>
+            </p>
+
+            <label for="question">
+              <span>Question:</span>
+              <select name="question" id="question" class="question">
+                <option value="1"> In your personal view, how important are cyber risks to the business? </option>
+                <option value="2"> Does the main Board have a good understanding of what the company's key information and data assets are (e.g. intellectual property, financial, corporate/strategic information, customer/personal data, etc)?</option>
+                <option value="3"> How has your company addressed Cyber Risks with its suppliers and other relevant third parties? </option>
+                <option value="4"> Do you feel the company is doing enough to protect itself against cyber threats? </option>
+                <option value="5"> Based on your own recollection, has the company suffered more or fewer cyber compromises and occurrences over the last year? </option>
+              </select>
+            </label>
+
+            <p><strong> Sector </strong> (Select to compare highest industry results)<strong>: </strong>
+            </p>
+
+            <label for="sector">
+              <span>Sector:</span>
+              <select name="sector" id="sector" class="sector">
+                <option value="0" data-value="23%,300%" data-role="Text one here"> Please choose </option>
+                <option value="1" data-value="56%" data-role="Text two here"> Pharma, Biotech and Health Care </option>
+                <option value="2" data-value="98%" data-role="Text three here"> Retail, Travel and Leisure </option>
+                <option value="3" data-value="43%" data-role="Text four here"> Real Estate and Support Services </option>
+                <option value="4" data-value="17%" data-role="Text five here"> Technnology and communications </option>
+                <option value="5" data-value="98%" data-role="Text three here"> Utilities and resources </option>
+                <option value="6" data-value="43%" data-role="Text four here"> Financial Services </option>
+                <option value="7" data-value="17%" data-role="Text five here"> Industrial goods and services </option>
+                <option value="8" data-value="17%" data-role="Text five here"> Consumer goods </option>
+              </select>
+            </label>
+
+            <div class="actions">
+              <input type="submit" class="action-apply" value="Apply selection" />
+              <input type="reset" class="action-clear" value="Clear all" />
+            </div>
+
+          </form>
+        </div>
+        <!-- /Explore Tab -->
+
+        <!-- Benchmark Tab -->
+        <div class="tab" id="benchmark-tab" data-tab="benchmark">
+          <form action="three" method="post" class="basic-white" name="benchmarkForm">
+
+            <div id="forms" class="forms"></div>
+            <div class="UK-Restyle">
+              <h2 class="UK-Restyle-gradient"> Benchmark against your company performance </h2>
+            </div>
+
+            <label for="name">
+              <span> Name: </span>
+              <input id="name" type="text" name="name" placeholder="Your full name" />
+            </label>
+
+            <label for="company">
+              <span> Company: </span>
+              <input id="company" type="text" name="company" placeholder="Your company name" />
+            </label>
+
+            <label for="email">
+              <span> Email: </span>
+              <input id="email" type="email" name="email" placeholder="Valid email address" />
+            </label>
+
+            <label for="subject">
+              <span>Subject :</span>
+              <select name="subject" id="subject">
+                <option value="0"> Please choose </option>
+                <option value="1"> Pharma, Biotech and Health Care </option>
+                <option value="2"> Retail, Travel and Leisure </option>
+                <option value="3"> Real Estate and Support Services </option>
+                <option value="4"> Technnology and communications </option>
+                <option value="5"> Utilities and resources </option>
+                <option value="6"> Financial Services </option>
+                <option value="7"> Industrial goods and services </option>
+                <option value="8"> Consumer goods </option>
+              </select>
+            </label>
+
+            <div class="actions">
+              <input type="submit" class="action-apply" value="Apply selection" />
+              <input type="reset" class="action-clear" value="Clear all" />
+            </div>
+
+          </form>
+        </div>
+        <!-- /Benchmark Tab -->
+      </div>
+    </section>
+
+    <aside class="right-column">
+      <p>KPMG Side Bar</p>
+    </aside>
+
+    <footer></footer>
+
+  </div>
+
+
+  <!-- amCharts javascript sources -->
+  <script src="https://code.jquery.com/jquery-2.1.1.js" type="text/javascript" ></script>
+  <script src="http://cdn.amcharts.com/lib/3/amcharts.js" type="text/javascript" ></script>
+  <script src="http://cdn.amcharts.com/lib/3/gauge.js" type="text/javascript" ></script>
+  <script src="http://cdn.amcharts.com/lib/3/themes/dark.js" type="text/javascript" ></script>
+
+  <!-- jQuery plugins -->
+  <script src="js/jquery.easytabs.min.js" type="text/javascript"></script>
+
+  <!-- amCharts export javascript sources -->
+  <script src="js/amcharts/amexport.js" type="text/javascript"></script>
+  <script src="js/amcharts/rgbcolor.js" type="text/javascript"></script>
+  <script src="js/amcharts/canvg.js" type="text/javascript"></script>
+  <script src="js/amcharts/filesaver.js" type="text/javascript"></script>
+  <script src="js/amcharts/jspdf.js" type="text/javascript"></script>
+  <script src="js/amcharts/jspdf.plugin.addimage.js" type="text/javascript"></script>
+
+  <!-- Chart definition and Animation -->
+  <script src="js/main.js" type="text/javascript" ></script>
+  <script src="js/chart.js" type="text/javascript" ></script>
+</body>
+
+</html>

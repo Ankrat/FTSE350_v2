@@ -1,0 +1,2609 @@
+{
+  "questions":[
+    {
+      "questionId":"17",
+      "questionText":"In your personal view, how important are cyber risks to the business?",
+      "answers":[
+        {
+          "answerText":"Not at all important",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Of limited importance",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Extremely important",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"I don't know",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionId":"18",
+      "questionText":"Does the main Board have a good understanding of what the company's key information and data assets are (e.g. intellectual property, financial, corporate/strategic information, customer/personal data, etc)?",
+      "answers":[
+        {
+          "answerText":"A poor understanding",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Basic/acceptable",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"A very clear understanding",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"I don't know",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionId":"28",
+      "questionText":"How has your company addressed Cyber Risks with its suppliers and other relevant third parties?",
+      "answers":[
+        {
+          "answerText":"Contract Clauses",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Pre Contract Due Diligence",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Third Party Audit",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Third Party Self Assessments",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Other. Please specify...",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"I don't know",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionId":"40",
+      "questionText":"Do you feel the company is doing enough to protect itself against cyber threats?",
+      "answers":[
+        {
+          "answerText":"No, performance is quite unsatisfactory",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"No, there is more we need to do",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Yes, we're doing good things",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Yes, standards are excellent",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"I don't know",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionId":"47",
+      "questionText":"Based on your own recollection, has the company suffered more or fewer cyber compromises and occurrences over the last year?",
+      "answers":[
+        {
+          "answerText":"Increase: significant",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Increase: slight",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Steady state/no change",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Decrease: slight",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"Decrease: significant",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        },
+        {
+          "answerText":"I don't know",
+          "answerTotal2013":"",
+          "answerTotal2014":"",
+          "sectors":[
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"1",
+              "sectorName":"Pharma, Biotech and Health Care",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"2",
+              "sectorName":"Retail, Travel and Leisure",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"3",
+              "sectorName":"Real Estate  and Support Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"4",
+              "sectorName":"Technology and communications",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"5",
+              "sectorName":"Utilities and resources",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"6",
+              "sectorName":"Financial Services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"7",
+              "sectorName":"Industrial goods and services",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2013",
+              "sectorTotal":""
+            },
+            {
+              "sectorId":"8",
+              "sectorName":"Consumer goods",
+              "sectorYear":"2014",
+              "sectorTotal":""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

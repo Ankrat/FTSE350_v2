@@ -1,0 +1,33 @@
+.tab{
+  // For the Tab border effect
+  border-top: 1px solid $border-color;
+  margin-top: -1px;
+}
+
+.actions {
+  // @include clearfix;
+  float: right;
+  margin: 0 25px;
+  input{
+    float: right;
+    font-size: 12px;
+    padding: 10px 15px;
+    color: #FFF;
+    border: none;
+  }
+}
+.action-clear {
+  background: $color_gray;
+  margin-right: 10px;
+  &:hover {
+    background: #716E6E;
+  }
+}
+.action-apply {
+  background: #429CD9;
+  margin-left: 10px;
+  &:hover {
+    background: $color_boston_blue;
+  }
+}
+
