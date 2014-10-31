@@ -268,13 +268,23 @@ ul, li, ol {
 .chartStyle {
   background-color: black;
   padding: 0;
-  float: left;
-  width: 450px;
+  width: 100%;
   height: 400px;
 }
 
 .highestSectorData {
-  height: 400px;
+  width: 100%;
+}
+.highestSectorData:before, .highestSectorData:after {
+  content: " ";
+  display: table;
+}
+.highestSectorData:after {
+  clear: both;
+}
+
+.dataPlaceholder {
+  float: left;
 }
 
 .data2014 {
@@ -286,7 +296,7 @@ ul, li, ol {
 }
 
 #tab-wrapper {
-  margin-top: 10px;
+  margin: 10px 20px 0 20px;
 }
 #tab-wrapper ul:before, #tab-wrapper ul:after {
   content: " ";
@@ -325,7 +335,7 @@ ul, li, ol {
 
 .actions {
   float: right;
-  margin: 0 25px;
+  margin: 0;
 }
 .actions input {
   float: right;
@@ -349,4 +359,8 @@ ul, li, ol {
 }
 .action-apply:hover {
   background: #3885b9;
+}
+
+select {
+  max-width: 100%;
 }

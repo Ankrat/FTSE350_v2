@@ -5,22 +5,48 @@
 .chartStyle {
   background-color: $black;
   padding: 0;
+  width: 100%;
+  min-height: 400px;
+
+}
+.exploreData,
+.benchmarkData {
+  @include clearfix;
+  width: 100%;
+}
+.benchmarkData{
+  display: none; // Default tab is explore
+}
+.dataPlaceholder{
   float: left;
-  width: 450px;
-  height: 400px;
-}
-.highestSectorData {
-  height: 400px;
-}
-.data2014 {
+  padding: 0 20px 20px 20px;
+  margin-top: -1em;
   color: #3D9CDC;
+  width: 28%;
+  width: calc( 33% - 40px);
+
+  h3{
+    margin: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid;
+  }
+  h4{
+    font-size: 3em;
+    margin: 0.1em 0;
+  }
+  p{
+    margin: 0 0 1em 0;
+    font-size: 0.9em;
+  }
+}
+
+
+.data2014 {
+  width: 44%;
+  width: calc( 50% - 40px);
 }
 .data2013 {
   color: #DD4815;
-}
-
-.data2014 {
-}
-
-.data2013 {
+  width: 44%;
+  width: calc( 50% - 40px);
 }

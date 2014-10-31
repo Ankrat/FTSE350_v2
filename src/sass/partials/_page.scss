@@ -30,6 +30,7 @@ ul, li, ol{
 .main-column {
   float: left;
   width: (750*100/980) * 1%; // 750px max from their site
+  padding-bottom: 3em;
 }
 .right-column {
   background: $color_bon_jour;

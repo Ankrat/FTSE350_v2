@@ -129,7 +129,6 @@ figure {
 
 /* line 211, ../sass/partials/_normalize.scss */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -213,8 +212,6 @@ input[type="number"]::-webkit-outer-spin-button {
 /* line 357, ../sass/partials/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -297,10 +294,9 @@ ul, li, ol {
 .main-column {
   float: left;
   width: 76.53061%;
-  padding-bottom: 3em;
 }
 
-/* line 35, ../sass/partials/_page.scss */
+/* line 34, ../sass/partials/_page.scss */
 .right-column {
   background: #dfdfdf;
   height: 900px;
@@ -434,16 +430,7 @@ ul, li, ol {
 /* line 7, ../sass/partials/_tab-content.scss */
 .actions {
   float: right;
-  padding: 1em 0;
-}
-/* line 38, ../sass/partials/_base.scss */
-.actions:before, .actions:after {
-  content: " ";
-  display: table;
-}
-/* line 42, ../sass/partials/_base.scss */
-.actions:after {
-  clear: both;
+  margin: 0;
 }
 /* line 11, ../sass/partials/_tab-content.scss */
 .actions input {
@@ -474,36 +461,23 @@ ul, li, ol {
   background: #3885b9;
 }
 
-/* line 1, ../sass/partials/_form-elements.scss */
+/* line 5, ../sass/partials/_form-elements.scss */
 select {
+  appearance: none;
   max-width: 100%;
+  line-height: 22px;
+  height: 22px;
+  font-size: 22px;
+  padding: 1em 0;
   width: 50%;
 }
 
-/* line 7, ../sass/partials/_form-elements.scss */
-input[type="text"],
-input[type="email"] {
-  max-width: 100%;
-  width: 50%;
-  padding: 0.2em;
-  color: #222222;
-}
-
-/* line 14, ../sass/partials/_form-elements.scss */
+/* line 15, ../sass/partials/_form-elements.scss */
 .input-line {
   margin: 1em 0;
 }
 
-/* line 38, ../sass/partials/_base.scss */
-label:before, label:after {
-  content: " ";
-  display: table;
-}
-/* line 42, ../sass/partials/_base.scss */
-label:after {
-  clear: both;
-}
-/* line 19, ../sass/partials/_form-elements.scss */
+/* line 20, ../sass/partials/_form-elements.scss */
 label span {
   display: block;
   margin: 1em 0 0.5em 0;

@@ -7,10 +7,10 @@ module.exports = {
   },
   css:{
     files: ['src/sass/**/*.scss'],
-    tasks: ['sass']
+    tasks: ['sass:dev']
   },
   scripts: {
-    files: ['src/scripts/**/*.js'],
-    tasks: ['jshint']
+    files: ['src/js/**/*.js']
+    // tasks: ['jshint']
   }
 }
