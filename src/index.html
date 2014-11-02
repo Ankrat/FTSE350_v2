@@ -35,16 +35,16 @@
         </div>
 
         <div class="benchmarkData">
-          <div class="dataPlaceholder">
+          <div class="dataPlaceholder benchmarkData">
             <h3>Your answer is</h3>
             <p> A poor understanding </p>
           </div>
-          <div class="dataPlaceholder">
+          <div class="dataPlaceholder benchmarkData2014">
             <h3> Sector result</h3>
             <h4> 00% </h4>
             <p> I don't understand </p>
           </div>
-          <div class="dataPlaceholder">
+          <div class="dataPlaceholder benchmarkData2013">
             <h3> 2014 Highest result</h3>
             <h4> 00% </h4>
             <p> I don't understand </p>
@@ -65,9 +65,9 @@
             <p><strong> Question </strong> (Select new question to view data)<strong>: </strong>
             </p>
 
-            <label for="question">
+            <label for="questionExplore">
               <span>Question:</span>
-              <select name="question" id="question" class="question">
+              <select name="questionExplore" id="questionExplore" class="question">
                 <option value="0"> Please choose </option>
                 <option value="1"> In your personal view, how important are cyber risks to the business? </option>
                 <option value="2"> Does the main Board have a good understanding of what the company's key information and data assets are (e.g. intellectual property, financial, corporate/strategic information, customer/personal data, etc)?</option>
@@ -106,14 +106,14 @@
 
         <!-- Benchmark Tab -->
         <div class="tab" id="benchmark-tab" data-tab="benchmark">
-          <form action="three" method="post" class="basic-white" name="benchmarkForm" id="benchmarkForm">
+          <form action="#" method="post" class="basic-white" name="benchmarkForm" id="benchmarkForm">
             <h2 class=""> Benchmark against your company performance </h2>
 
             <!-- User Answers -->
             <div class="input-line">
-              <label for="question">
+              <label for="questionBenchmark">
                 <span>Question:</span>
-                <select name="question" id="question" class="question">
+                <select name="questionBenchmark" id="questionBenchmark" class="question">
                   <option value="0"> Please choose </option>
                   <option value="1"> In your personal view, how important are cyber risks to the business? </option>
                   <option value="2"> Does the main Board have a good understanding of what the company's key information and data assets are (e.g. intellectual property, financial, corporate/strategic information, customer/personal data, etc)?</option>
@@ -127,7 +127,7 @@
             <div class="input-line">
               <label for="answerQ1">
                 <span>In your personal view, how important are cyber risks to the business?</span>
-                <select name="answerQ1" id="answerQ1">
+                <select name="answerQ1" id="answerQ1" class="answer">
                   <option value="1">Not at all important</option>
                   <option value="2">Of limited importance</option>
                   <option value="3">Extremely important</option>
@@ -139,7 +139,7 @@
             <div class="input-line">
               <label for="answerQ2">
                 <span>Does the main Board have a good understanding of what the company's key information and data assets are (e.g. intellectual property, financial, corporate/strategic information, customer/personal data, etc)?</span>
-                <select name="answerQ2" id="answerQ2">
+                <select name="answerQ2" id="answerQ2" class="answer">
                   <option value="1">A poor understanding</option>
                   <option value="2">Basic/acceptable</option>
                   <option value="3">A very clear understanding</option>
@@ -151,7 +151,7 @@
             <div class="input-line">
               <label for="answerQ3">
                 <span>How has your company addressed Cyber Risks with its suppliers and other relevant third parties?</span>
-                <select name="answerQ3" id="answerQ3">
+                <select name="answerQ3" id="answerQ3" class="answer">
                   <option value="1">Contract Clauses</option>
                   <option value="2">Pre Contract Due Diligence</option>
                   <option value="3">Third Party Audit</option>
@@ -165,7 +165,7 @@
             <div class="input-line">
               <label for="answerQ4">
                 <span>Do you feel the company is doing enough to protect itself against cyber threats?</span>
-                <select name="answerQ4" id="answerQ4">
+                <select name="answerQ4" id="answerQ4" class="answer">
                   <option value="1">No, performance is quite unsatisfactory</option>
                   <option value="2">No, there is more we need to do</option>
                   <option value="3">Yes, we're doing good things</option>
@@ -178,7 +178,7 @@
             <div class="input-line">
               <label for="answerQ5">
                 <span>Based on your own recollection, has the company suffered more or fewer cyber compromises and occurrences over the last year?</span>
-                <select name="answerQ5" id="answerQ5">
+                <select name="answerQ5" id="answerQ5" class="answer">
                   <option value="1">Increase: significant</option>
                   <option value="2">Increase: slight</option>
                   <option value="3">Steady state/no change</option>
@@ -215,7 +215,7 @@
             <div class="input-line">
               <label for="subject">
                 <span>Subject :</span>
-                <select name="subject" id="subject">
+                <select name="subject" id="subject" class="subject">
                   <option value="0"> Please choose </option>
                   <option value="1"> Pharma, Biotech and Health Care </option>
                   <option value="2"> Retail, Travel and Leisure </option>

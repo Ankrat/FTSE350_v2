@@ -56,22 +56,25 @@ var gaugeChart = AmCharts.makeChart("chartdiv",{
     ]
   }
 );
-var axisStore=[];
 
 
-// Need to get my JSON file for data if no lists
-var list = false, qData,
+var list = false, // Determine if data.json has been loaded
+    qData,  // Store the data.json
+    selectedQuestion,
     color2013 = ["#F0B7AB","#E89281","#E16F59","#DD4815","#C34328","#AB3B23"],
     color2014 = ["#B5D8EF","#91C4E7","#6EB2DF","#3D9CDC","#3F8DC1","#387EAC"],
     answerTotal2013 = 0, answerTotal2014 = 0,
+    // Variable to manage the bands created on change
     bandTmp2013 = [], bandTmp2014 = [],
     bandToAdd2013 = [], bandToAdd2014 = [];
 
 if( !list ) getData();
 
 function getData(){
+  var phpURL = "/kpmg/FTSE350_v2/src/data/data.json";
+  var gruntURL = "../data/data.json";
   var jqxhr = $.ajax({
-      url:"../data/data.json",
+      url:phpURL,
       dataType: "json"
     })
     .done(function(e) {
@@ -83,6 +86,7 @@ function getData(){
     })
     .always(function(e) {
       console.log( "getData called and e = ", e );
+      console.log( "list = ", list );
     });
 
     return list
@@ -100,9 +104,12 @@ function getData(){
    *
    * @data
    * Generate the different lists
+   * Store the received data from Ajax
+   * Usefull when HTML depend on these data
    */
   function createLists(data){
     qData = data;
+
     questionList = _.each( data, function(question){
       var obj = {
         id : question.questionID,
@@ -111,70 +118,97 @@ function getData(){
       return obj
     });
 
-    // answersQ1
     return;
   }
 
-// Filters / Graph settings
-
-// Bind onChange event to filters
-
-// Tab Explore
-
   /*
-  * Question selection
-  * Will trigger a change of numberOfAnswer,
-  * hence numberOfBands and colors
-  *
-  */
-  function exploreQuestionChange( qId ){
-    var selectedQuestion = _.find( qData.questions, function(q){
-      return parseInt(qId) === parseInt(q.questionId);
-    });
-
-    // Reset variable
+   * resetData
+   *
+   * @description: rset my variables to default
+   */
+  function resetData(){
     bandToAdd2013 = [];
     bandToAdd2014 = [];
     bandTmp2013 = [];
     bandTmp2014 = [];
     answerTotal2013 = 0;
     answerTotal2014 = 0;
+  };
+
+
+// Filters / Graph settings
+
+  /*
+   * createAxis
+   * @retun: GaugeAxis from Amcharts
+   *
+   * @band: Array of GaugeBand from Amchart
+   * @description: create the axis to add to the graph
+   */
+  function createAxis( band ){
+    var axis = new AmCharts.GaugeAxis();
+        axis.startValue = 0;
+        axis.endValue = 100;
+        axis.startAngle = -90;
+        axis.endAngle = 90;
+        axis.valueInterval=10;
+        axis.tickThickness=0;
+        axis.labelFrequency=0;
+        axis.bands = band;
+
+        return axis
+  };
+// Bind onChange event to filters
+
+// ================
+// Tab Explore
+// ================
+
+
+   // Question selection
+   // Will trigger a change of numberOfAnswer,
+   // hence numberOfBands and colors...
+
+
+  /*
+   * exploreQuestionChange
+   * @retun:
+   *
+   * @qId : integer
+   * @description: select the question, reset the variable,
+   * create the axis to add to the graph. update the chart
+   */
+  function exploreQuestionChange( qId ){
+    selectedQuestion = _.find( qData.questions, function(q){
+      return parseInt(qId) === parseInt(q.questionId);
+    });
+
+    // Reset variable
+    resetData();
 
     findBand( selectedQuestion );
 
-    var axis2013 = new AmCharts.GaugeAxis();
+    var axis2013 = createAxis( bandToAdd2013 );
         axis2013.id= "GaugeAxis2013";
-        axis2013.startValue = 0;
-        axis2013.endValue = 100;
-        axis2013.startAngle = -90;
-        axis2013.endAngle = 90;
-        axis2013.valueInterval=10;
-        axis2013.tickThickness=0;
-        axis2013.labelFrequency=0;
-        axis2013.bands = bandToAdd2013;
-        console.log( "axis2013.band = ", axis2013.bands )
 
-    var axis2014 = new AmCharts.GaugeAxis();
-        axis2014.startValue = -90;
-        axis2014.endValue = 100;
-        axis2014.startAngle = -90;
-        axis2014.endAngle = 90;
+    var axis2014 = createAxis( bandToAdd2014 );
         axis2014.id="GaugeAxis2014";
-        axis2014.valueInterval=10;
-        axis2014.tickThickness=0;
-        axis2014.labelFrequency=0;
-        // axis2014.bands = bandToAdd2014;
-        // console.log( "axis2014.band = ", axis2014.bands )
 
-
-    axisStore.push(axis2013);
     gaugeChart.addAxis(axis2013);
     // gaugeChart.addAxis(axis2014);
     // axisStore.push(axis2014);
     gaugeChart.validateNow();
 
+    return;
   };
 
+  /*
+   * findBand
+   * @retun:
+   *
+   * @question : object
+   * @description: Get the data from the question which will be used for the amChartBand
+   */
   function findBand( question ){
 
     _.each( question.answers, function(answer){
@@ -187,16 +221,17 @@ function getData(){
     // Once band20XX are created,
     // Generate the "bands" property for the graph
     bandToAdd2013 = generateBand( bandTmp2013, color2013 );
-    // bandToAdd2014 = generateBand( bandTmp2014, color2014 );
+    bandToAdd2014 = generateBand( bandTmp2014, color2014 );
+    return;
   }
 
   /*
    * generateBand
-   * @retun:
+   * @retun: array of object
    *
    * @band : array
    * @color: reference to array of color
-   * @description
+   * @description: generate amChart bands object  to add to the graph
    */
   function generateBand(band, arrayColor){
 
@@ -206,34 +241,33 @@ function getData(){
     var answerTotal, bandRadius, bandInnerRadius,
         bandStartValue = 0, bandEndValue;
 
+    // Graph Properties corresponding to the year, not the data
     if( arrayColor === color2014 ){
-      console.log( "arrayColor === color2014 " )
       bandRadius = "100%";
       bandInnerRadius = "80%";
       answerTotal = parseInt(answerTotal2014);
     }else{
-      console.log( "arrayColor === color2013 " )
       bandRadius = "55%";
       bandInnerRadius = "75%";
       answerTotal = parseInt(answerTotal2013);
     }
 
+    // create the GaugeBand properties from JSON data
     _.each( band , function( b, index ){
-      console.log("answerTotal = ", answerTotal);
       var obj = {};
       bandEndValue = ( parseInt(b.val) / answerTotal ) * 100 ;
       obj.id = "band_"+index;
       obj.balloonText = b.text;
-      obj.color = arrayColor[index + 1];
+      obj.color = arrayColor[index ];
       obj.startValue = bandStartValue;
       obj.endValue = bandStartValue + bandEndValue;
       obj.radius = bandRadius;
       obj.innerRadius = bandInnerRadius;
 
       bandStartValue = obj.endValue;
-
       bandItem.push( obj );
     });
+
     return bandItem;
   }
 
@@ -244,17 +278,66 @@ function getData(){
   *
   */
 
-// Tab Benchmark
-
   /*
-  * Question selection
-  * Will trigger a change of reference
-  * to compare your answers against
-  * only show highest result of this question
+   * exploreSectorChange
+  * @retun:
   *
-  * Sector result from your sector selection in the form
-  *
+  * @sId : integer
+  * @description: select the sector, reset the variable,
+  * update the text
   */
+  function exploreSectorChange( sId ){
+    // Need to have a question selected beforehand
+    var thisQID = $("#question option:selected").val();
+    console.log( "thisQID", thisQID);
+    if( parseInt(thisQID) === 0 ){
+      alert("You have to pick a question first");
+    }else{
+      // Select the highest value in this sector for this question
+      var highestValue2013, highestValue2014, allAnswerSector = [];
+
+      _.each( selectedQuestion.answers, function(answer){
+
+        var sectorSelected = _.find( answer.sectors, function(sector){
+          // var thisText = answer.answerText;
+          return parseInt(sector.sectorId) === parseInt(sId);
+        });
+        allAnswerSector.push(sectorSelected);
+      });
+      var index2013;
+      highestValue2013 = _.max( allAnswerSector, function( sector, index ){
+        return sector.sectorTotal2013;
+      });
+      // Find Answer ID corresponding to this highest value
+      // to write text
+      index2013 = _.indexOf( allAnswerSector, highestValue2013 );
+
+      highestValue2014 = _.max( allAnswerSector, function( sector ){
+        return sector.sectorTotal2014;
+      });
+      index2014 = _.indexOf( allAnswerSector, highestValue2014 );
+
+      var response = {};
+      response.value2013 = (parseInt(highestValue2013.sectorTotal2013) / parseInt(selectedQuestion.answers[index2013].answerTotal2013) * 100).toFixed(2);
+      response.text2013 = selectedQuestion.answers[index2013].answerText;
+      response.value2014 = (parseInt(highestValue2014.sectorTotal2014) / parseInt(selectedQuestion.answers[index2014].answerTotal2014) * 100).toFixed(2);
+      response.text2014 = selectedQuestion.answers[index2014].answerText;
+
+      return response;
+    }
+  };
+
+// ================
+// Tab Benchmark
+// ================
+
+  // Question selection
+  // Will trigger a change of reference
+  // to compare your answers against
+  // only show highest result of this question
+  //
+  // Sector result from your sector selection in the form
+
 
   /*
   * Each Question answers
@@ -268,7 +351,3 @@ function getData(){
   * Send data to email...
   */
 
-$("#question").change(function( e ){
-  var qId = $(this).val();
-  exploreQuestionChange( qId );
-});
