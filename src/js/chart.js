@@ -57,6 +57,52 @@ var gaugeChart = AmCharts.makeChart("chartdiv",{
   }
 );
 
+gaugeChart.exportConfig = {
+
+  menuTop: '0',
+  menuLeft: 'auto',
+  menuRight: '0px',
+  menuBottom: 'auto',
+  menuItems: [{
+      textAlign: 'center',
+      onclick: function () {},
+      icon: 'img/export.png',
+      iconTitle: 'Save chart as an image',
+      items: [{
+          title: 'JPG',
+          format: 'jpg'
+      }, {
+          title: 'PNG',
+          format: 'png'
+      }, {
+          title: 'SVG',
+          format: 'svg'
+      } ,{
+      title: 'PDF',
+      format: 'pdf'
+      }]
+  }],
+  menuItemOutput:{
+      fileName:"amChart"
+  },
+  menuItemStyle: {
+      backgroundColor: '#FFF',
+      rollOverBackgroundColor: '#EFEFEF',
+      color: '#000000',
+      rollOverColor: '#CC0000',
+      paddingTop: '6px',
+      paddingRight: '6px',
+      paddingBottom: '6px',
+      paddingLeft: '6px',
+      marginTop: '0px',
+      marginRight: '0px',
+      marginBottom: '0px',
+      marginLeft: '0px',
+      textAlign: 'left',
+      textDecoration: 'none'
+  }
+};
+
 
 var list = false, // Determine if data.json has been loaded
     qData,  // Store the data.json
@@ -71,10 +117,14 @@ var list = false, // Determine if data.json has been loaded
 if( !list ) getData();
 
 function getData(){
-  var phpURL = "/kpmg/FTSE350_v2/src/data/data.json";
-  var gruntURL = "../data/data.json";
+  if( window.location.host == "localhost:9000"){
+    var URL = "../data/data.json";
+  }else{
+    var URL = "/kpmg/FTSE350_v2/src/data/data.json";
+  }
+
   var jqxhr = $.ajax({
-      url:phpURL,
+      url:URL,
       dataType: "json"
     })
     .done(function(e) {
