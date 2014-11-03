@@ -21,6 +21,7 @@ $( document ).ready(function() {
       email = $("#email");
 
   // Explore
+  /*
   questionE.change(function( e ){
     var qId = $(this).val();
     exploreQuestionChange( qId );
@@ -50,9 +51,82 @@ $( document ).ready(function() {
       .html(rep.text2013)
       .fadeIn();
   });
+  */
+$(".action-apply").on('click', function(e){
 
+  e.preventDefault();
+  var bQId = 1;
+  var sId = 1;
+
+
+  if( e.target.id === "send-data" ){
+
+    if( localStorage.getItem("hasSent") ){
+      console.log("Already applied");
+     return
+    }else{
+      var formError = validateForm();
+      if( !_.isEmpty(formError.msg)){
+        alert( formError.msg );
+      }else{
+        var data = createFile();
+        var redirectURL = window.location.host + '/saveData.php';
+
+        bQId = questionB.find("option:selected").val();
+        sId = sectorB.find("option:selected").val();
+        localStorage.setItem("hasSent", true);
+        $.ajax({
+          type: 'POST',
+          url: redirectURL, //url of receiver file on server
+          data: data, //your data
+          success: function(){
+            console.log('done');
+            console.log('data = ', data);
+          }
+        });
+      }
+    }
+
+  }else{
+    bQId = questionE.find("option:selected").val();
+    sId = sectorE.find("option:selected").val();
+  }
+
+  exploreQuestionChange( bQId );
+  rep = exploreSectorChange( sId );
+
+  headingB2014
+    .hide()
+    .html(rep.value2014 + "%")
+    .fadeIn();
+  valueB2014
+    .hide()
+    .html(rep.text2014)
+    .fadeIn();
+  headingB2013
+    .hide()
+    .html(rep.value2013 + "%")
+    .fadeIn();
+  valueB2013
+    .hide()
+    .html(rep.text2013)
+    .fadeIn();
+
+  var myAnswers = ($('.answer'))[bQId - 1];
+      myAnswer = ($(myAnswers).find('option:selected')).text();
+      console.log("myAnswers = ", myAnswers);
+      console.log("myAnswer = ", myAnswer);
+
+  valueMyData
+    .hide()
+    .html(myAnswer)
+    .fadeIn();
+
+
+  });
 
   // Benchmark
+  /*
   var bQId //Benchmark Question ID
   questionB.change(function( e ){
     bQId = $(this).val();
@@ -94,28 +168,35 @@ $( document ).ready(function() {
   });
 
   // send data
-  $("#send-data").submit( function(e){
+  $("#send-data").on('click', function(e){
     e.preventDefault();
-
-    var formError = validateForm();
-    if( !_.isEmpty(formError.msg)){
-      alert( formError.msg );
-
+    if( localStorage.getItem("hasSent") ){
+      console.log("Already applied");
+     return
     }else{
-      var data = createFile();
-      var redirectURL = window.location.host + '/saveData.php';
-      $.ajax({
-        type: 'POST',
-        url: redirectURL, //url of receiver file on server
-        data: data, //your data
-        success: function(){ console.log('done'); console.log('data = ', data);}
-      });
-      // return
-      // send
+      // localStorage.setItem("hasSent", true);
+      var formError = validateForm();
+      if( !_.isEmpty(formError.msg)){
+        alert( formError.msg );
+
+      }else{
+        var data = createFile();
+        var redirectURL = window.location.host + '/saveData.php';
+        $.ajax({
+          type: 'POST',
+          url: redirectURL, //url of receiver file on server
+          data: data, //your data
+          success: function(){ console.log('done'); console.log('data = ', data);localStorage.setItem("hasSent", true);}
+        });
+
+        // return
+        // send
+      }
     }
 
   });
 
+*/
   // Tabs definition
   $("#tab-wrapper").easytabs();
 
@@ -141,7 +222,10 @@ $( document ).ready(function() {
     }
   });
 
-
+  // Print button
+  $(".printpdf").on('click', function(){
+    window.print();
+  });
   // Utilis
   function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

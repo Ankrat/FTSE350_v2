@@ -130,6 +130,7 @@ function getData(){
     .done(function(e) {
       createLists(e);
       list = true;
+      init();
     })
     .fail(function(e) {
       list = false;
@@ -167,6 +168,7 @@ function getData(){
       }
       return obj
     });
+
 
     return;
   }
@@ -307,7 +309,7 @@ function getData(){
       var obj = {};
       bandEndValue = ( parseInt(b.val) / answerTotal ) * 100 ;
       obj.id = "band_"+index;
-      obj.balloonText = b.text;
+      obj.balloonText = b.text + " " + bandEndValue.toFixed(2) +"%";
       obj.color = arrayColor[index ];
       obj.startValue = bandStartValue;
       obj.endValue = bandStartValue + bandEndValue;
@@ -339,7 +341,6 @@ function getData(){
   function exploreSectorChange( sId ){
     // Need to have a question selected beforehand
     var thisQID = $("#question option:selected").val();
-    console.log( "thisQID", thisQID);
     if( parseInt(thisQID) === 0 ){
       alert("You have to pick a question first");
     }else{
@@ -401,3 +402,33 @@ function getData(){
   * Send data to email...
   */
 
+
+// Store the DOM elements needed
+  var heading2014 = $('.data2014 h4'),
+      value2014 = $('.data2014 p'),
+      heading2013 = $('.data2013 h4'),
+      value2013 = $('.data2013 p');
+
+function init(){
+    exploreQuestionChange( 1 );
+    rep = exploreSectorChange( 1 );
+
+    // Pass the value stored to my elements
+    // to update their content accordingly
+    heading2014
+      .hide()                     // Hide existing value
+      .html(rep.value2014 + "%")  // Update value
+      .fadeIn();                  // FadeIn the new content
+    value2014
+      .hide()
+      .html(rep.text2014)
+      .fadeIn();
+    heading2013
+      .hide()
+      .html(rep.value2013 + "%")
+      .fadeIn();
+    value2013
+      .hide()
+      .html(rep.text2013)
+      .fadeIn();
+  };

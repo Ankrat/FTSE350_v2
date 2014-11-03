@@ -5,6 +5,12 @@
   <meta charset="utf-8">
   <title>KPMG example - interactive tool</title>
 
+  <link rel="stylesheet" type="text/css" media="all" href="http://blog.kpmg.co.uk/wp-content/themes/KPMG_Theme_Header_Update/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://blog.kpmg.co.uk/wp-content/themes/KPMG_Theme_Header_Update/css/styles.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://blog.kpmg.co.uk/wp-content/themes/KPMG_Theme_Header_Update/css/blog.css" />
+
+
+
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
 
 </head>
@@ -13,6 +19,55 @@
   <div id="main" class="group">
 
     <header class="kpmgHeader">
+      <div class="brandingBar">
+      <div class="brandingBarLogo">
+        <a href="http://blog.kpmg.co.uk"><img src="http://blog.kpmg.co.uk/wp-content/themes/KPMG_Theme_Header_Update/images/spacer.gif" alt="KPMG – cutting through complexity™">
+        </a>
+      </div>
+      <div class="brandingBarTop">
+        <div class="brandingBarSearch">
+          <form method="get" id="searchform" action="http://blog.kpmg.co.uk/">
+            <input type="text" value="Search Blog" title="Enter search words" onfocus="if (this.value =='Search Blog') {this.value=''}" onblur="if (this.value =='') {this.value='Search Blog'}" name="s" id="s">
+            <input type="image" id="searchsubmit" src="http://blog.kpmg.co.uk/wp-content/themes/KPMG_Theme_Header_Update/images/branding_search.gif" alt="Search">
+          </form>
+
+        </div>
+        <div class="menu-utility-navigation-container">
+          <ul id="menu-utility-navigation" class="menu">
+            <li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-106"><a href="http://www.kpmg.com/uk/en/media/Pages/default.aspx">News</a>
+            </li>
+            <li id="menu-item-107" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107"><a href="http://www.kpmg.com/UK/en/about/ContactUs/Pages/default.aspx">Contact Us</a>
+            </li>
+            <li id="menu-item-682" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-682"><a href="http://www.kpmg.com/UK/en/Pages/Cookies.aspx">Cookies</a>
+            </li>
+          </ul>
+        </div>
+        <h1>United Kingdom</h1>
+      </div>
+      <div class="primaryNavigation">
+        <div class="menu-main-navigation-container">
+          <ul id="menu-main-navigation" class="menu">
+            <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://www.kpmg.com/uk/en/about/Pages/default.aspx">About</a>
+            </li>
+            <li id="menu-item-741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-741"><a href="http://www.kpmg.com/uk/en/industry/Pages/default.aspx">Industries</a>
+            </li>
+            <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="http://www.kpmg.com/uk/en/services/Pages/default.aspx">Services</a>
+            </li>
+            <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="http://www.kpmg.com/uk/en/issuesandinsights/pages/default.aspx">Research</a>
+            </li>
+            <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="http://www.kpmg.com/uk/en/careers/Pages/default.aspx">Careers</a>
+            </li>
+            <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="http://www.kpmg.com/UK/en/media">Media</a>
+            </li>
+            <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="http://www.kpmg.com/UK/en/Pages/Alumni.aspx">Alumni</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+</div>
+
+
+
     </header>
 
     <section class="main-column">
@@ -106,7 +161,7 @@
 
         <!-- Benchmark Tab -->
         <div class="tab" id="benchmark-tab" data-tab="benchmark">
-          <form action="#" method="post" class="basic-white" name="benchmarkForm" id="benchmarkForm">
+          <form action="" method="post" class="basic-white" name="benchmarkForm" id="benchmarkForm">
             <h2 class=""> Benchmark against your company performance </h2>
 
             <!-- User Answers -->
@@ -156,7 +211,7 @@
                   <option value="2">Pre Contract Due Diligence</option>
                   <option value="3">Third Party Audit</option>
                   <option value="4">Third Party Self Assessments</option>
-                  <option value="5">Other. Please specify...</option>
+                  <option value="5">Other.</option>
                   <option value="6">I don't know</option>
                 </select>
               </label>

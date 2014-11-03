@@ -22,19 +22,16 @@ ul, li, ol{
   max-width:980px;
 }
 
-.kpmgHeader {
-  background: url("/img/header.png") no-repeat transparent 0 0;
-  height: 97px;
-}
+.kpmgHeader {}
 
 .main-column {
   float: left;
-  width: (750*100/980) * 1%; // 750px max from their site
+  width: 580px; //(580*100/980) * 1%; // 750px max from their site
   padding-bottom: 3em;
 }
 .right-column {
   background: $color_bon_jour;
   height: 900px;
   float: left;
-  width: (230*100/980) * 1%; // 230px max from their site
+  width: 340px; //(230*100/980) * 1%; // 230px max from their site
 }
