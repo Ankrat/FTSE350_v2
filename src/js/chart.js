@@ -126,6 +126,7 @@ var URL = "/data/data.json";
     .done(function(e) {
       createLists(e);
       list = true;
+      init();
     })
     .fail(function(e) {
       list = false;
@@ -163,9 +164,7 @@ var URL = "/data/data.json";
       }
       return obj
     });
-
     init();
-
     return;
   }
 
@@ -336,9 +335,11 @@ var URL = "/data/data.json";
   */
   function exploreSectorChange( sId ){
     // Need to have a question selected beforehand
-    var thisQID = $("#questionExplore option:selected").val();
+    // var thisQID = $("#questionExplore option:selected").val();
+    var thisQID = $("#question option:selected").val();
     console.log( "thisQID", thisQID);
     console.log( "thissId", sId);
+
     if( parseInt(thisQID) === 0 ){
       alert("You have to pick a question first");
     }else{
@@ -400,9 +401,6 @@ var URL = "/data/data.json";
   * Send data to email...
   */
 
-
-
-
 // Store the DOM elements needed
   var heading2014 = $('.data2014 h4'),
       value2014 = $('.data2014 p'),
@@ -432,4 +430,3 @@ function init(){
       .html(rep.text2013)
       .fadeIn();
   };
-
