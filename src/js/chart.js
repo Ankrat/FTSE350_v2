@@ -41,7 +41,7 @@ var gaugeChart = AmCharts.makeChart("chartdiv",{
          "id":"Label2013",
          "text":"2013",
          "size":14,
-         "x": 178,
+         "x": 96,
          "y": 310
       },
       {
@@ -50,58 +50,58 @@ var gaugeChart = AmCharts.makeChart("chartdiv",{
          "id":"Label2014",
          "text":"2014",
          "size":14,
-         "x": 110,
+         "x": 30,
          "y": 310
       }
     ]
   }
 );
 
-gaugeChart.exportConfig = {
+// gaugeChart.exportConfig = {
 
-  menuTop: '0',
-  menuLeft: 'auto',
-  menuRight: '0px',
-  menuBottom: 'auto',
-  menuItems: [{
-      textAlign: 'center',
-      onclick: function () {},
-      icon: 'img/export.png',
-      iconTitle: 'Save chart as an image',
-      items: [{
-          title: 'JPG',
-          format: 'jpg'
-      }, {
-          title: 'PNG',
-          format: 'png'
-      }, {
-          title: 'SVG',
-          format: 'svg'
-      } ,{
-      title: 'PDF',
-      format: 'pdf'
-      }]
-  }],
-  menuItemOutput:{
-      fileName:"amChart"
-  },
-  menuItemStyle: {
-      backgroundColor: '#FFF',
-      rollOverBackgroundColor: '#EFEFEF',
-      color: '#000000',
-      rollOverColor: '#CC0000',
-      paddingTop: '6px',
-      paddingRight: '6px',
-      paddingBottom: '6px',
-      paddingLeft: '6px',
-      marginTop: '0px',
-      marginRight: '0px',
-      marginBottom: '0px',
-      marginLeft: '0px',
-      textAlign: 'left',
-      textDecoration: 'none'
-  }
-};
+  //   menuTop: '0',
+  //   menuLeft: 'auto',
+  //   menuRight: '0px',
+  //   menuBottom: 'auto',
+  //   menuItems: [{
+  //       textAlign: 'center',
+  //       onclick: function () {},
+  //       icon: 'img/export.png',
+  //       iconTitle: 'Save chart as an image',
+  //       items: [{
+  //           title: 'JPG',
+  //           format: 'jpg'
+  //       }, {
+  //           title: 'PNG',
+  //           format: 'png'
+  //       }, {
+  //           title: 'SVG',
+  //           format: 'svg'
+  //       } ,{
+  //       title: 'PDF',
+  //       format: 'pdf'
+  //       }]
+  //   }],
+  //   menuItemOutput:{
+  //       fileName:"amChart"
+  //   },
+  //   menuItemStyle: {
+  //       backgroundColor: '#FFF',
+  //       rollOverBackgroundColor: '#EFEFEF',
+  //       color: '#000000',
+  //       rollOverColor: '#CC0000',
+  //       paddingTop: '6px',
+  //       paddingRight: '6px',
+  //       paddingBottom: '6px',
+  //       paddingLeft: '6px',
+  //       marginTop: '0px',
+  //       marginRight: '0px',
+  //       marginBottom: '0px',
+  //       marginLeft: '0px',
+  //       textAlign: 'left',
+  //       textDecoration: 'none'
+  //   }
+// };
 
 
 var list = false, // Determine if data.json has been loaded
@@ -117,11 +117,7 @@ var list = false, // Determine if data.json has been loaded
 if( !list ) getData();
 
 function getData(){
-  if( window.location.host == "localhost:9000"){
-    var URL = "../data/data.json";
-  }else{
-    var URL = "/kpmg/FTSE350_v2/src/data/data.json";
-  }
+var URL = "/data/data.json";
 
   var jqxhr = $.ajax({
       url:URL,
@@ -167,6 +163,8 @@ function getData(){
       }
       return obj
     });
+
+    init();
 
     return;
   }
@@ -245,7 +243,7 @@ function getData(){
         axis2014.id="GaugeAxis2014";
 
     gaugeChart.addAxis(axis2013);
-    // gaugeChart.addAxis(axis2014);
+    gaugeChart.addAxis(axis2014);
     // axisStore.push(axis2014);
     gaugeChart.validateNow();
 
@@ -307,7 +305,7 @@ function getData(){
       var obj = {};
       bandEndValue = ( parseInt(b.val) / answerTotal ) * 100 ;
       obj.id = "band_"+index;
-      obj.balloonText = b.text;
+      obj.balloonText = b.text + " " + bandEndValue.toFixed(0) + "%";
       obj.color = arrayColor[index ];
       obj.startValue = bandStartValue;
       obj.endValue = bandStartValue + bandEndValue;
@@ -338,8 +336,9 @@ function getData(){
   */
   function exploreSectorChange( sId ){
     // Need to have a question selected beforehand
-    var thisQID = $("#question option:selected").val();
+    var thisQID = $("#questionExplore option:selected").val();
     console.log( "thisQID", thisQID);
+    console.log( "thissId", sId);
     if( parseInt(thisQID) === 0 ){
       alert("You have to pick a question first");
     }else{
@@ -368,11 +367,11 @@ function getData(){
       index2014 = _.indexOf( allAnswerSector, highestValue2014 );
 
       var response = {};
-      response.value2013 = (parseInt(highestValue2013.sectorTotal2013) / parseInt(selectedQuestion.answers[index2013].answerTotal2013) * 100).toFixed(2);
+      response.value2013 = (parseInt(highestValue2013.sectorTotal2013) / parseInt(selectedQuestion.answers[index2013].answerTotal2013) * 100).toFixed(0);
       response.text2013 = selectedQuestion.answers[index2013].answerText;
-      response.value2014 = (parseInt(highestValue2014.sectorTotal2014) / parseInt(selectedQuestion.answers[index2014].answerTotal2014) * 100).toFixed(2);
+      response.value2014 = (parseInt(highestValue2014.sectorTotal2014) / parseInt(selectedQuestion.answers[index2014].answerTotal2014) * 100).toFixed(0);
       response.text2014 = selectedQuestion.answers[index2014].answerText;
-
+      console.log("response = ", response);
       return response;
     }
   };
@@ -400,4 +399,37 @@ function getData(){
   * Fill in the form to see the updated graph
   * Send data to email...
   */
+
+
+
+
+// Store the DOM elements needed
+  var heading2014 = $('.data2014 h4'),
+      value2014 = $('.data2014 p'),
+      heading2013 = $('.data2013 h4'),
+      value2013 = $('.data2013 p');
+
+function init(){
+    exploreQuestionChange( 1 );
+    rep = exploreSectorChange( 1 );
+
+    // Pass the value stored to my elements
+    // to update their content accordingly
+    heading2014
+      .hide()                     // Hide existing value
+      .html(rep.value2014 + "%")  // Update value
+      .fadeIn();                  // FadeIn the new content
+    value2014
+      .hide()
+      .html(rep.text2014)
+      .fadeIn();
+    heading2013
+      .hide()
+      .html(rep.value2013 + "%")
+      .fadeIn();
+    value2013
+      .hide()
+      .html(rep.text2013)
+      .fadeIn();
+  };
 

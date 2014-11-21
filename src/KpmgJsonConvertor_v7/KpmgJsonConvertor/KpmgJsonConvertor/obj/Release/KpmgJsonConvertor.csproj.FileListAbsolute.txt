@@ -1,0 +1,10 @@
+C:\SVN\KpmgJsonConvertor\KpmgJsonConvertor\bin\Release\KpmgJsonConvertor.exe.config
+C:\SVN\KpmgJsonConvertor\KpmgJsonConvertor\bin\Release\KpmgJsonConvertor.exe
+C:\SVN\KpmgJsonConvertor\KpmgJsonConvertor\bin\Release\KpmgJsonConvertor.pdb
+C:\SVN\KpmgJsonConvertor\KpmgJsonConvertor\bin\Release\Ionic.Zip.dll
+C:\SVN\KpmgJsonConvertor\KpmgJsonConvertor\bin\Release\Newtonsoft.Json.dll
+C:\SVN\KpmgJsonConvertor\KpmgJsonConvertor\bin\Release\Newtonsoft.Json.xml
+C:\SVN\KpmgJsonConvertor\KpmgJsonConvertor\obj\Release\KpmgJsonConvertor.exe
+C:\SVN\KpmgJsonConvertor\KpmgJsonConvertor\obj\Release\KpmgJsonConvertor.pdb
+C:\SVN\KpmgJsonConvertor\KpmgJsonConvertor\bin\Release\Email.NET.dll
+C:\SVN\KpmgJsonConvertor\KpmgJsonConvertor\bin\Release\Email.NET.xml
