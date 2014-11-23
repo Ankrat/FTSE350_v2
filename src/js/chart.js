@@ -59,48 +59,48 @@ var gaugeChart = AmCharts.makeChart("chartdiv",{
 
 // gaugeChart.exportConfig = {
 
-  //   menuTop: '0',
-  //   menuLeft: 'auto',
-  //   menuRight: '0px',
-  //   menuBottom: 'auto',
-  //   menuItems: [{
-  //       textAlign: 'center',
-  //       onclick: function () {},
-  //       icon: 'img/export.png',
-  //       iconTitle: 'Save chart as an image',
-  //       items: [{
-  //           title: 'JPG',
-  //           format: 'jpg'
-  //       }, {
-  //           title: 'PNG',
-  //           format: 'png'
-  //       }, {
-  //           title: 'SVG',
-  //           format: 'svg'
-  //       } ,{
-  //       title: 'PDF',
-  //       format: 'pdf'
-  //       }]
-  //   }],
-  //   menuItemOutput:{
-  //       fileName:"amChart"
-  //   },
-  //   menuItemStyle: {
-  //       backgroundColor: '#FFF',
-  //       rollOverBackgroundColor: '#EFEFEF',
-  //       color: '#000000',
-  //       rollOverColor: '#CC0000',
-  //       paddingTop: '6px',
-  //       paddingRight: '6px',
-  //       paddingBottom: '6px',
-  //       paddingLeft: '6px',
-  //       marginTop: '0px',
-  //       marginRight: '0px',
-  //       marginBottom: '0px',
-  //       marginLeft: '0px',
-  //       textAlign: 'left',
-  //       textDecoration: 'none'
-  //   }
+//   menuTop: '0',
+//   menuLeft: 'auto',
+//   menuRight: '0px',
+//   menuBottom: 'auto',
+//   menuItems: [{
+//       textAlign: 'center',
+//       onclick: function () {},
+//       icon: 'img/export.png',
+//       iconTitle: 'Save chart as an image',
+//       items: [{
+//           title: 'JPG',
+//           format: 'jpg'
+//       }, {
+//           title: 'PNG',
+//           format: 'png'
+//       }, {
+//           title: 'SVG',
+//           format: 'svg'
+//       } ,{
+//       title: 'PDF',
+//       format: 'pdf'
+//       }]
+//   }],
+//   menuItemOutput:{
+//       fileName:"amChart"
+//   },
+//   menuItemStyle: {
+//       backgroundColor: '#FFF',
+//       rollOverBackgroundColor: '#EFEFEF',
+//       color: '#000000',
+//       rollOverColor: '#CC0000',
+//       paddingTop: '6px',
+//       paddingRight: '6px',
+//       paddingBottom: '6px',
+//       paddingLeft: '6px',
+//       marginTop: '0px',
+//       marginRight: '0px',
+//       marginBottom: '0px',
+//       marginLeft: '0px',
+//       textAlign: 'left',
+//       textDecoration: 'none'
+//   }
 // };
 
 
@@ -126,7 +126,6 @@ var URL = "/data/data.json";
     .done(function(e) {
       createLists(e);
       list = true;
-      init();
     })
     .fail(function(e) {
       list = false;
@@ -165,6 +164,7 @@ var URL = "/data/data.json";
       return obj
     });
     init();
+
     return;
   }
 
@@ -335,11 +335,9 @@ var URL = "/data/data.json";
   */
   function exploreSectorChange( sId ){
     // Need to have a question selected beforehand
-    // var thisQID = $("#questionExplore option:selected").val();
-    var thisQID = $("#question option:selected").val();
+    var thisQID = $("#questionExplore option:selected").val();
     console.log( "thisQID", thisQID);
     console.log( "thissId", sId);
-
     if( parseInt(thisQID) === 0 ){
       alert("You have to pick a question first");
     }else{
@@ -401,6 +399,9 @@ var URL = "/data/data.json";
   * Send data to email...
   */
 
+
+
+
 // Store the DOM elements needed
   var heading2014 = $('.data2014 h4'),
       value2014 = $('.data2014 p'),
@@ -430,3 +431,4 @@ function init(){
       .html(rep.text2013)
       .fadeIn();
   };
+
