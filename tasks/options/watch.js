@@ -6,8 +6,8 @@ module.exports = {
     files: ['src/*.html']
   },
   css:{
-    files: ['src/sass/**/*.scss'],
-    tasks: ['sass:dev']
+    // files: ['src/sass/**/*.scss'],
+    // tasks: ['sass:dev']
   },
   scripts: {
     files: ['src/js/**/*.js']

@@ -68,91 +68,49 @@
     </header>
     <div class="columnWrapper">
       <section class="main-column">
-        <img src="img/FTSE350title.png" alt="FTSE 350" />
 
-        <div class="tabWrapper" id="tab-wrapper">
-          <ul>
-            <li class="active"><a href="#explore-tab" class="active">Explore the top issues and trends</a>
-            </li>
-            <li><a href="form.html">Benchmark against your company</a>
-            </li>
-          </ul>
+        <div class="chartWrapper">
+          <img src="img/FTSE350title.png" alt="FTSE 350" />
 
-          <!-- Explore Tab -->
-          <div class="tab" id="explore-tab" data-tab="explore">
-            <div class="info">
-              <p>Get a sector-by-sector breakdown of FTSE350 company responses to the survey's key questions</p>
+          <div class="welcomeMessage">
+
+            <div class="welcomeImage">
+              <img src="img/welcomeimage.jpg" alt="FTSE 350" />
+              <h6><strong> Malcolm Marshall </strong><br> UK and Global Head <br> Information Protection & Business Resilience <br> 020 7311 5456 <a href="mailto:malcolm.marshall@kpmg.co.uk">malcolm.marshall@kpmg.co.uk</a></h6>
+              <p>Welcome to the KPMG350 Cyber Governance health check</p>
             </div>
 
-            <div id="questionPanel" class="questionPanel">
-              <p>Does the main Board have a good understanding of what the company's key information and data assets are?<p/>
+            <div class="cyberStrapline">
+              Is a government initiative designed to help boards develop their understanding and awareness of cyber risk.
             </div>
-            <div class="chartWrapper">
 
-              <div id="chartdiv" class="chartStyle"></div>
-
-              <div class="exploreData">
-                <div class="dataPlaceholder data2014">
-                  <h3> 2014 Highest sector result</h3>
-                  <h4> 00% </h4>
-                  <p> A poor understanding </p>
-                </div>
-                <div class="dataPlaceholder data2013">
-                  <h3> 2013 Highest sector result</h3>
-                  <h4> 00% </h4>
-                  <p> I don't understand </p>
-                </div>
+            <div class="welcomeText">
+              <h6>What is it?</h6>
+              <p>Firms were asked to complete a survey assessing their cyber security - with the results highlighting the current level of cyber maturity amongst some of the UK’s largest organisations.</p>
+              <h6>The KPMG FTSE350 interactive chart</h6>
+              <p>Our interactive chart provides a sector-by-sector breakdown that lets you explore the responses to the most important questions. Browse the FTSE350 results, or take the survey yourself and see how you compare on some of the key issues.</p>
+              <div class="welcomeLinks">
+                <a id="exploreBtn" href="explore.html" class="greenBtn">Explore the top issues and trends</a>
+                <a id="benchmarkBtn" href="form.html" class="greenBtn">Benchmark against your company</a>
               </div>
 
             </div>
 
-            <div class="form basic-white" name="exploreForm" id="exploreForm">
 
-              <div class="input-line">
 
-                <div class="selector">
-                  <label for="sector">
-                    <span>Select a sector:</span>
-                  </label>
-                  <select name="sector" id="sector" class="sector">
-                    <option value="0"> All sector </option>
-                    <option value="1"> Pharma, Biotech and Health Care </option>
-                    <option value="2"> Retail, Travel and Leisure </option>
-                    <option value="3"> Real Estate and Support Services </option>
-                    <option value="4"> Technnology and communications </option>
-                    <option value="5"> Utilities and resources </option>
-                    <option value="6"> Financial Services </option>
-                    <option value="7"> Industrial goods and services </option>
-                    <option value="8"> Consumer goods </option>
-                  </select>
-                </div>
 
-                <div class="selector">
-                  <label for="questionExplore">
-                    <span>Now, choose a question to see the results:</span>
-                  </label>
-                  <select name="questionExplore" id="questionExplore" class="question">
-                    <option value="1"> In your personal view, how important are cyber risks to the business? </option>
-                    <option value="2"> Does the main Board have a good understanding of what the company's key information and data assets are (e.g. intellectual property, financial, corporate/strategic information, customer/personal data, etc)?</option>
-                    <option value="3"> How has your company addressed Cyber Risks with its suppliers and other relevant third parties? </option>
-                    <option value="4"> Do you feel the company is doing enough to protect itself against cyber threats? </option>
-                    <option value="5"> Based on your own recollection, has the company suffered more or fewer cyber compromises and occurrences over the last year? </option>
-                  </select>
-                </div>
 
-                <div class="actions">
-                  <button class="action-apply" id="update-chartBtn">Apply</button>
-                </div>
-              </div>
-
-            </div>
           </div>
-          <!-- /Explore Tab -->
-
         </div>
       </section>
-    </div>
 
+      <!--       <aside class="rightColumnBlog">
+
+        <div class="textwidget">
+          <h3 class="widget-title">Header</h3>
+        </div>
+      </aside> -->
+    </div>
     <footer>
       <div class="footer">
 
@@ -194,31 +152,6 @@
 
   </div>
 
-
-
-
-  <script src="js/jquery.min.js" type="text/javascript"></script>
-  <script src="js/underscore.min.js" type="text/javascript"></script>
-
-  <!-- amCharts javascript sources -->
-  <script src="js/amcharts/amcharts.js" type="text/javascript"></script>
-  <script src="js/amcharts/gauge.js" type="text/javascript"></script>
-  <script src="js/amcharts/dark.js" type="text/javascript"></script>
-
-  <!-- jQuery plugins -->
-  <script src="js/jquery.easytabs.min.js" type="text/javascript"></script>
-
-  <!-- amCharts export javascript sources -->
-  <script src="js/amcharts/amexport.js" type="text/javascript"></script>
-  <script src="js/amcharts/rgbcolor.js" type="text/javascript"></script>
-  <script src="js/amcharts/canvg.js" type="text/javascript"></script>
-  <script src="js/amcharts/filesaver.js" type="text/javascript"></script>
-  <script src="js/amcharts/jspdf.js" type="text/javascript"></script>
-  <script src="js/amcharts/jspdf.plugin.addimage.js" type="text/javascript"></script>
-
-  <!-- Chart definition and Animation -->
-  <script src="js/main.js" type="text/javascript"></script>
-  <script src="js/chart.js" type="text/javascript"></script>
 </body>
 
 </html>
