@@ -22,36 +22,17 @@ var gaugeChart = AmCharts.makeChart("chartdiv",{
          "id":"GaugeAxis2014",
          "tickThickness":0,
          "labelFrequency":0
-      },
-      {
-         "axisThickness":0,
-         "startAngle":-90,
-         "endAngle":90,
-         "startValue":0, // 0%
-         "endValue":100, // 100%
-         "id":"GaugeAxis2013",
-         "tickThickness":0,
-         "labelFrequency":0
       }
     ],
     "allLabels":[
       {
          "bold":true,
-         "color":"#DD4815",
-         "id":"Label2013",
-         "text":"2013",
-         "size":14,
-         "x": 96,
-         "y": 310
-      },
-      {
-         "bold":true,
          "color":"#3D9CDC",
          "id":"Label2014",
          "text":"2014",
-         "size":14,
-         "x": 30,
-         "y": 310
+         "size":36,
+         "x": 185,
+         "y": 200
       }
     ]
   }
@@ -117,7 +98,7 @@ var list = false, // Determine if data.json has been loaded
 if( !list ) getData();
 
 function getData(){
-var URL = "/data/data.json";
+  var URL = "data/data.json";
 
   var jqxhr = $.ajax({
       url:URL,
@@ -259,7 +240,7 @@ var URL = "/data/data.json";
   function findBand( question ){
 
     _.each( question.answers, function(answer){
-      bandTmp2013.push( { val: answer.answerTotal2013, text: answer.answerText} );
+      // bandTmp2013.push( { val: answer.answerTotal2013, text: answer.answerText} );
       bandTmp2014.push( { val: answer.answerTotal2014, text: answer.answerText} );
       answerTotal2013 += parseInt(answer.answerTotal2013) || 0;
       answerTotal2014 += parseInt(answer.answerTotal2014) || 0;
@@ -338,6 +319,7 @@ var URL = "/data/data.json";
     var thisQID = $("#questionExplore option:selected").val();
     console.log( "thisQID", thisQID);
     console.log( "thissId", sId);
+
     if( parseInt(thisQID) === 0 ){
       alert("You have to pick a question first");
     }else{
@@ -347,15 +329,16 @@ var URL = "/data/data.json";
       _.each( selectedQuestion.answers, function(answer){
 
         var sectorSelected = _.find( answer.sectors, function(sector){
-          // var thisText = answer.answerText;
+          var thisText = answer.answerText;
           return parseInt(sector.sectorId) === parseInt(sId);
         });
         allAnswerSector.push(sectorSelected);
       });
-      var index2013;
+      // var index2013;
       highestValue2013 = _.max( allAnswerSector, function( sector, index ){
         return sector.sectorTotal2013;
       });
+
       // Find Answer ID corresponding to this highest value
       // to write text
       index2013 = _.indexOf( allAnswerSector, highestValue2013 );
