@@ -29,7 +29,6 @@ $( document ).ready(function() {
     var bQId = 1;
     var sId = 1;
 
-
     if( e.target.id === "send-data" ){
 
       if( localStorage.getItem("hasSent") ){
