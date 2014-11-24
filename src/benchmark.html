@@ -68,246 +68,35 @@
     </header>
     <div class="columnWrapper">
       <section class="main-column">
-        <div class="chartWrapper">
-          <img src="img/FTSE350title.png" alt="FTSE 350" />
-          <!-- <img src="img/exportpdf.png" class="printpdf" alt="Print PDF" id="printPDF" style="padding: 10px 10px 10px 10px;" title="Save chart as a PDF" onmouseover="this.src='img/exportpdfon.png'" onmouseout="this.src='img/exportpdf.png'"> -->
-
-
-          <div id="chartdiv" class="chartStyle"></div>
-
-          <div class="exploreData">
-            <div class="dataPlaceholder data2014">
-              <h3> 2014 Highest sector result</h3>
-              <h4> 00% </h4>
-              <p> A poor understanding </p>
-            </div>
-            <div class="dataPlaceholder data2013">
-              <h3> 2013 Highest sector result</h3>
-              <h4> 00% </h4>
-              <p> I don't understand </p>
-            </div>
-          </div>
-
-          <div class="benchmarkData">
-            <div class="dataPlaceholder benchmarkData">
-              <h3>Your answer is</h3>
-              <p> A poor understanding </p>
-            </div>
-            <div class="dataPlaceholder benchmarkData2014">
-              <h3> Sector result</h3>
-              <h4> 00% </h4>
-              <p> I don't understand </p>
-            </div>
-            <div class="dataPlaceholder benchmarkData2013">
-              <h3> 2014 Highest result</h3>
-              <h4> 00% </h4>
-              <p> I don't understand </p>
-            </div>
-          </div>
-        </div>
+        <img src="img/FTSE350title.png" alt="FTSE 350" />
 
         <div class="tabWrapper" id="tab-wrapper">
           <ul>
-            <li><a href="#explore-tab">Explore the top issues and trends</a>
+            <li><a href="explore.html">Explore the top issues and trends</a>
             </li>
-            <li><a href="#benchmark-tab">Benchmark against your company</a>
+            <li class="active"><a href="form.html" class="active">Benchmark against your company</a>
             </li>
           </ul>
-          <!-- Explore Tab -->
-          <div class="tab" id="explore-tab" data-tab="explore">
-            <form action="two" method="post" class="basic-white" name="exploreForm" id="exploreForm">
-              <h2 class="UK-Restyle-gradient"> Explore the top issues and trends </h2>
-
-              <!-- <p><strong> Question </strong> (Select new question to view data)<strong>: </strong>
-            </p> -->
-              <div class="input-line">
-                <label for="questionExplore">
-                  <span>Question: (Select new question to view data)</span>
-                  <select name="questionExplore" id="questionExplore" class="question">
-                    <option value="1"> In your personal view, how important are cyber risks to the business? </option>
-                    <option value="2"> Does the main Board have a good understanding of what the company's key information and data assets are (e.g. intellectual property, financial, corporate/strategic information, customer/personal data, etc)?</option>
-                    <option value="3"> How has your company addressed Cyber Risks with its suppliers and other relevant third parties? </option>
-                    <option value="4"> Do you feel the company is doing enough to protect itself against cyber threats? </option>
-                    <option value="5"> Based on your own recollection, has the company suffered more or fewer cyber compromises and occurrences over the last year? </option>
-                  </select>
-                </label>
-              </div>
-
-              <!-- <p><strong> Sector </strong> (Select to compare highest industry results)<strong>: </strong>
-            </p> -->
-              <div class="input-line">
-                <label for="sector">
-                  <span>Sector: (Select to compare highest industry results)</span>
-                  <select name="sector" id="sector" class="sector">
-                    <option value="1"> Pharma, Biotech and Health Care </option>
-                    <option value="2"> Retail, Travel and Leisure </option>
-                    <option value="3"> Real Estate and Support Services </option>
-                    <option value="4"> Technnology and communications </option>
-                    <option value="5"> Utilities and resources </option>
-                    <option value="6"> Financial Services </option>
-                    <option value="7"> Industrial goods and services </option>
-                    <option value="8"> Consumer goods </option>
-                  </select>
-                </label>
-              </div>
-
-              <div class="actions">
-                <input type="submit" class="action-apply" value="Apply selection" id="update-chartBtn" />
-                <!--                                     <input type="reset" class="action-clear" value="Clear all" /> -->
-              </div>
-
-            </form>
-          </div>
-          <!-- /Explore Tab -->
-
           <!-- Benchmark Tab -->
           <div class="tab" id="benchmark-tab" data-tab="benchmark">
-            <form action="#" method="post" class="basic-white" name="benchmarkForm" id="benchmarkForm">
-              <h2 class="UK-Restyle-gradient"> Benchmark against your company performance </h2>
-
-              <!-- User Answers -->
-              <div class="input-line">
-                <label for="questionBenchmark">
-                  <span>Question: (Select new question to view data)</span>
-                  <select name="questionBenchmark" id="questionBenchmark" class="question">
-                    <option value="1"> In your personal view, how important are cyber risks to the business? </option>
-                    <option value="2"> Does the main Board have a good understanding of what the company's key information and data assets are (e.g. intellectual property, financial, corporate/strategic information, customer/personal data, etc)?</option>
-                    <option value="3"> How has your company addressed Cyber Risks with its suppliers and other relevant third parties? </option>
-                    <option value="4"> Do you feel the company is doing enough to protect itself against cyber threats? </option>
-                    <option value="5"> Based on your own recollection, has the company suffered more or fewer cyber compromises and occurrences over the last year? </option>
-                  </select>
-                </label>
+            <section class="card">
+              <div class="question-answer">
+                <p>
+                  <img src="img/gradarrow03.png" alt="" />
+                  <span></span>
+                </p>
+                <p>
+                  <img src="img/gradarrow03.png" alt="" />
+                  <span></span>
+                </p>
               </div>
-
-              <h2 class="UK-Restyle-gradient-chart">Answer the questions below to input your responses into the Cyber Health Check Chart.</h2>
-
-              <div class="input-line">
-                <label for="answerQ1">
-                  <span>In your personal view, how important are cyber risks to the business?</span>
-                  <select name="answerQ1" id="answerQ1" class="answer">
-                    <option value="1">Not at all important</option>
-                    <option value="2">Of limited importance</option>
-                    <option value="3">Extremely important</option>
-                    <option value="4">I don't know</option>
-                  </select>
-                  <span id="responseAnswerQ1"></span>
-                </label>
-              </div>
-
-              <div class="input-line">
-                <label for="answerQ2">
-                  <span>Does the main Board have a good understanding of what the company's key information and data assets are (e.g. intellectual property, financial, corporate/strategic information, customer/personal data, etc)?</span>
-                  <select name="answerQ2" id="answerQ2" class="answer">
-                    <option value="1">A poor understanding</option>
-                    <option value="2">Basic/acceptable</option>
-                    <option value="3">A very clear understanding</option>
-                    <option value="4">I don't know</option>
-                  </select>
-                  <span id="responseAnswerQ2"></span>
-                </label>
-              </div>
-
-              <div class="input-line">
-                <label for="answerQ3">
-                  <span>How has your company addressed Cyber Risks with its suppliers and other relevant third parties?</span>
-                  <select name="answerQ3" id="answerQ3" class="answer">
-                    <option value="1">Contract Clauses</option>
-                    <option value="2">Pre Contract Due Diligence</option>
-                    <option value="3">Third Party Audit</option>
-                    <option value="4">Third Party Self Assessments</option>
-                    <option value="5">Other</option>
-                    <option value="6">I don't know</option>
-                  </select>
-                  <span id="responseAnswerQ3"></span>
-                </label>
-              </div>
-
-              <div class="input-line">
-                <label for="answerQ4">
-                  <span>Do you feel the company is doing enough to protect itself against cyber threats?</span>
-                  <select name="answerQ4" id="answerQ4" class="answer">
-                    <option value="1">No, performance is quite unsatisfactory</option>
-                    <option value="2">No, there is more we need to do</option>
-                    <option value="3">Yes, we're doing good things</option>
-                    <option value="4">Yes, standards are excellent</option>
-                    <option value="5">I don't know</option>
-                  </select>
-                  <span id="responseAnswerQ4"></span>
-                </label>
-              </div>
-
-              <div class="input-line">
-                <label for="answerQ5">
-                  <span>Based on your own recollection, has the company suffered more or fewer cyber compromises and occurrences over the last year?</span>
-                  <select name="answerQ5" id="answerQ5" class="answer">
-                    <option value="1">Increase: significant</option>
-                    <option value="2">Increase: slight</option>
-                    <option value="3">Steady state/no change</option>
-                    <option value="4">Decrease: slight</option>
-                    <option value="5">Decrease: significant</option>
-                    <option value="6">I don't know</option>
-                  </select>
-                  <span id="responseAnswerQ5"></span>
-                </label>
-              </div>
-
-
-              <!-- User Data -->
-              <div class="input-line">
-                <label for="name">
-                  <span> Name: </span>
-                  <input id="name" type="text" name="name" placeholder="Your full name" />
-                </label>
-              </div>
-
-              <div class="input-line">
-                <label for="company">
-                  <span> Company: </span>
-                  <input id="company" type="text" name="company" placeholder="Your company name" />
-                </label>
-              </div>
-
-              <div class="input-line">
-                <label for="email">
-                  <span> Email: </span>
-                  <input id="email" type="email" name="email" placeholder="Valid email address" />
-                </label>
-              </div>
-
-              <div class="input-line">
-                <label for="subject">
-                  <span>Sector:</span>
-                  <select name="subject" id="subject" class="subject">
-                    <option value="0"> Please choose </option>
-                    <option value="1"> Pharma, Biotech and Health Care </option>
-                    <option value="2"> Retail, Travel and Leisure </option>
-                    <option value="3"> Real Estate and Support Services </option>
-                    <option value="4"> Technnology and communications </option>
-                    <option value="5"> Utilities and resources </option>
-                    <option value="6"> Financial Services </option>
-                    <option value="7"> Industrial goods and services </option>
-                    <option value="8"> Consumer goods </option>
-                  </select>
-                </label>
-              </div>
-
-              <div class="actions">
-                <input type="submit" class="action-apply" value="Apply selection" id="send-data" />
-                <!--                                     <input type="reset" class="action-clear" value="Clear all" /> -->
-              </div>
-
-            </form>
+              <div class="graph-holder" id="graphQ1"></div>
+            </section>
           </div>
           <!-- /Benchmark Tab -->
         </div>
       </section>
 
-      <aside class="rightColumnBlog">
-
-        <div class="textwidget">
-          <h3 class="widget-title">Header</h3>
-        </div>
-      </aside>
     </div>
     <footer>
       <div class="footer">

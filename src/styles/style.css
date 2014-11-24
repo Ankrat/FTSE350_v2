@@ -199,6 +199,15 @@ img{
   max-width: 100%;
 }
 
+.clearfix:before,
+.clearfix:after{
+  content: " ";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+
 #main {
   margin: 0 auto;
   max-width: 996px;
@@ -294,7 +303,6 @@ img{
   font-size: 14px;
 }
 
-
 .data2014 {
 }
 .data2013 {
@@ -343,9 +351,8 @@ img{
   color: #007C92;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 12px !important;ß
+  /*font-size: 12px !important;*/
 }
-
 
 .tab {
   border-top: 1px solid #E7ECF9;
@@ -353,10 +360,9 @@ img{
   overflow: visible;
 }
 
-
 .actions {
   float: right;
-  padding: 1em 0;
+  padding: 1.4em 0;
 }
 
 .actions:before, .actions:after {
@@ -370,7 +376,7 @@ img{
 
 .actions input {
   float: right;
-  font-size: 12px;
+  /*font-size: 12px;*/
   padding: 10px 15px;
   color: #FFF;
   text-transform: uppercase;
@@ -392,18 +398,17 @@ img{
 
 .greenBtn {
   float: left;
-  font-size: 12px;
+  /*font-size: 12px;*/
   padding: 10px 15px 10px 30px;
   color: #FFF !important;
   text-transform: uppercase;
   background: #007C95;
-  /*margin-left: 330px;*/
   border: solid 4px #1E1E1E;
   background-image: url(../img/yellowarrow.png);
   background-position: left 3px;
   background-repeat: no-repeat;
   margin-bottom: 15px;
-  min-width: 265px;
+  min-width: 375px;
   display: block;
 }
 
@@ -448,9 +453,8 @@ input[type="email"] {
   width: 50%;
   padding: 0.2em;
   color: #222222;
-  font-size: 12px;
+  /*font-size: 12px;*/
 }
-
 
 .input-line {
   margin: 0em 0 0.25em 0;
@@ -501,7 +505,7 @@ h2 {
 }
 
 h3 {
-  font-size: 12px;
+  /*font-size: 12px;*/
 }
 
 .brandingBarTop h1 {
@@ -517,11 +521,11 @@ h3 {
 
 
 .main-column p {
-  font-size: 12px;
+  /*font-size: 12px;*/
 }
 
 .main-column label {
-  font-size: 12px;
+  /*font-size: 12px;*/
 }
 
 /* data2014 font colour */
@@ -594,9 +598,9 @@ h3 {
 }
 
 .welcomeImage a{
-font-size: 14px;
-text-decoration: none;
-color: #007C92;
+  font-size: 14px;
+  text-decoration: none;
+  color: #007C92;
 }
 
 .cyberStrapline {
@@ -640,11 +644,11 @@ color: #007C92;
 /* Question panel css */
 .questionPanel {
   position: relative;
-  font-size: 14px;
+  /*font-size: 14px;*/
   color: #ffffff;
   line-height: 1.2em;
   text-transform: uppercase;
-  height: 96px;
+  min-height: 96px;
   border: solid 4px #1E1E1E;
   background-image: url(../img/gradarrow02.png);
   background-position: left top;
@@ -658,6 +662,101 @@ color: #007C92;
   color: #ffffff;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 30px 20px 30px 130px !important;
+  padding: 30px 20px 30px 130px;
 }
+
+/* Question panel benchmark specific */
+
+.heading h3{
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFF;
+  padding: 1em 0;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+h4{
+  color: #E7602D;
+  font-size: 16px;
+}
+.user-data{
+  border: solid 4px #1E1E1E;
+  padding: 20px;
+}
+.user-data .input-line{
+  text-align: center;
+}
+.user-data .input-line label span{
+  display: inline-block;
+  margin-right: 20px;
+  text-align: right;
+  width: 80px;
+}
+.user-data .input-line label input,
+.user-data .input-line label select{
+  border: solid 4px #1E1E1E;
+  color: #444;
+  padding: 7px 15px 7px 5px;
+  width: 300px;
+  font-size: 14px;
+}
+.user-data .input-line label select{
+  -moz-appearance: initial;
+  -webkit-appearance: initial;
+
+  background: #FFF;
+  border-radius: 0;
+}
+
+.question{
+  float: left;
+  max-width: 36.9318%; /*(325px * 100 / 880px )*/
+  margin: 10px 0;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 20px;
+  padding: 20px;
+  min-height: 190px;
+  border: solid 4px #1E1E1E;
+}
+.question-mark-bg{
+  float: left;
+  width: 50px;
+  margin: 0 15px 85px 0;
+}
+.answer{
+  float: left;
+  margin: 10px 0;
+  margin-left: 2.27%; /* ( 20px * 100 / 880px )*/
+  width: 60.7982%; /* 100% - 36.9318% - 2.27% */
+  color: #ffffff;
+  font-size: 14px;
+  padding: 20px;
+  border: solid 4px #1E1E1E;
+  min-height: 190px;
+}
+.answer label{
+  display: block;
+  padding: 5px;
+  float: left;
+  width: 50%;
+}
+.answer label input[type="radio"]{
+  margin-right: 10px;
+  vertical-align: text-top;
+}
+.line-h,
+.line-xh{
+  margin-bottom: 25px;
+  float: left;
+}
+#benchmark-tab .actions{
+  text-align: center;
+  float: initial;
+}
+#benchmark-tab .actions input{
+  float: initial;
+  font-size: 12px;
+}
+
 

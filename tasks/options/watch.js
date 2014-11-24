@@ -6,7 +6,7 @@ module.exports = {
     files: ['src/*.html']
   },
   css:{
-    // files: ['src/sass/**/*.scss'],
+    files: ['src/sass/**/*.scss']
     // tasks: ['sass:dev']
   },
   scripts: {
