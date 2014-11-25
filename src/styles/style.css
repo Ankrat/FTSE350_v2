@@ -656,6 +656,7 @@ h3 {
   font-size: 14px;
   color: #ffffff;
   line-height: 20px;
+  min-height: 100px;
   text-transform: uppercase;
   padding: 30px 20px 30px 130px;
 }

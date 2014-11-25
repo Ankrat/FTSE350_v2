@@ -3,6 +3,7 @@ $( document ).ready(function() {
   // Store the DOM elements needed
   var questionE = $('#questionExplore'),
       questionB = $('#questionBenchmark'),
+      questionPanel = $("#questionPanel p:first-child"),
       sectorE = $('#sector'),
       sectorB = $('.subject'),
       heading2014 = $('.data2014 h4'),
@@ -81,6 +82,10 @@ $( document ).ready(function() {
 
 
     // Explore Update HTML
+    questionPanel
+      .hide()
+      .html(questionE.find("option:selected").text())
+      .fadeIn();
     heading2014
       .hide()
       .html(rep.value2014 + "%")
@@ -91,11 +96,11 @@ $( document ).ready(function() {
       .fadeIn();
     heading2013
       .hide()
-      .html(rep.value2013 + "%")
+      .html(rep.valueSector + "%")
       .fadeIn();
     value2013
       .hide()
-      .html(rep.text2013)
+      .html(rep.textSector)
       .fadeIn();
 
     // Benchmark Update HTML
@@ -109,11 +114,11 @@ $( document ).ready(function() {
       .fadeIn();
     headingB2013
       .hide()
-      .html(rep.value2013 + "%")
+      .html(rep.valueSector + "%")
       .fadeIn();
     valueB2013
       .hide()
-      .html(rep.text2013)
+      .html(rep.textSector)
       .fadeIn();
 
     var myAnswers = ($('.answer'))[bQId - 1],

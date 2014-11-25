@@ -309,32 +309,6 @@ function getData(){
     }
   };
 
-// ================
-// Tab Benchmark
-// ================
-
-  // Question selection
-  // Will trigger a change of reference
-  // to compare your answers against
-  // only show highest result of this question
-  //
-  // Sector result from your sector selection in the form
-
-
-  /*
-  * Each Question answers
-  * Will trigger a text update in the graph
-  *
-  */
-
-  /*
-  * Apply Selection
-  * Fill in the form to see the updated graph
-  * Send data to email...
-  */
-
-
-
 
 // Store the DOM elements needed
   var heading2014 = $('.data2014 h4'),
