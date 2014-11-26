@@ -255,9 +255,6 @@ function getData(){
         allAnswersForThisSector = [], highestSector, indexSector;
     var response = {};
 
-    console.log( "thisQID", thisQID);
-    console.log( "thissId", sId);
-
     if( parseInt(thisQID) === 0 ){
       alert("You have to pick a question first");
     }else{
@@ -265,7 +262,6 @@ function getData(){
       // Select the highest value in all sectors for this question
       // where answerTotal2014 is max => % of answer
       _.each( selectedQuestion.answers, function( answer ){
-        console.log("answerTotal in Loop = ", answerTotal);
         answerTotal += parseInt(answer.answerTotal2014);
       });
       maxAnswer = _.max( selectedQuestion.answers, function( answer, index ){
@@ -303,8 +299,6 @@ function getData(){
         response.valueSector = response.value2014
         response.textSector = response.text2014;
       }
-
-      console.log("response = ", response);
       return response;
     }
   };
@@ -319,7 +313,6 @@ function getData(){
 function init(){
     exploreQuestionChange( 1 );
     rep = exploreSectorChange( 0 );
-    console.log("rep = ", rep);
     // Pass the value stored to my elements
     // to update their content accordingly
     heading2014

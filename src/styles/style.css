@@ -768,6 +768,10 @@ h3 {
 }
 
 /* Graph dashboard*/
+
+.printpdf{
+  cursor: pointer;
+}
 .card {
   border: solid 4px #3b3b3b;
   background: #222222;
@@ -845,9 +849,27 @@ h3 {
 #cardQ1 .answer-bg + span{
   display: initial;
 }
-#cardQ2 .question-bg{
+#cardQ2 .question-bg,
+#cardQ3 .question-bg{
   margin-bottom: 65px;
+}
+#cardQ2 .question-answer,
+#cardQ3 .question-answer{
+  min-height: 225px;
 }
 #cardQ3{}
 #cardQ4{}
 #cardQ5{}
+#graphQ5:before,
+#graphQ5:after{
+  content: " ";
+  display: table;
+}
+#graphQ5:after{
+  clear: both;
+}
+#graphQ5 > div{
+  min-height: 400px;
+  width: 50%;
+  float: left;
+}

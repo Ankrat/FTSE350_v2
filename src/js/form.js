@@ -52,21 +52,23 @@ $("#send-data").on('click', function(){
     // Store the data to be used n results page
     localStorage.setItem("answers", JSON.stringify(dataChart));
 
-    // $.ajax({
-    //   type: 'POST',
-    //   url: redirectURL, //url of file's receiver on server
-    //   dataType: "json",
-    //   data: { data : JSON.stringify(dataOBJ) }, //your data
-    //   success: function(){
-    //     console.log('success data = ', data);
-    //   }
-    // });
+    $.ajax({
+      type: 'POST',
+      url: redirectURL, //url of file's receiver on server
+      dataType: "json",
+      data: { data : JSON.stringify(dataOBJ) }, //your data
+      success: function(){
+        window.location.replace("/benchmark.html");
+        // console.log('success data = ', data);
+      }
+    });
     // similar behavior as an HTTP redirect
-    window.location.replace("/benchmark.html");
+    // window.location.replace("/benchmark.html");
     // similar behavior as clicking on a link
     // window.location.href = "http://stackoverflow.com";
   }
 });
+
 // Utilis
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -185,4 +187,13 @@ function createData(){
   dataChart.sectorId = subjectVal;
 
   return dataChart;
-}
+};
+
+function init(){
+
+  if( localStorage.getItem("hasSent") && localStorage.getItem("answers").length ){
+    window.location.replace("/benchmark.html");
+  }
+};
+
+init();
