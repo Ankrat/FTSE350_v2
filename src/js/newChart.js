@@ -4,8 +4,9 @@ var gaugeChart = AmCharts.makeChart("chartdiv",{
     "type":"gauge",
     "pathToImages":"http://cdn.amcharts.com/lib/3/images/",
     "faceBorderWidth":0,
+    "backgroundAlpha":0,
     "color":"#FFFFFF",
-    "theme":"dark",
+    "height": 276,
     "arrows":[
       {
          "alpha":0,

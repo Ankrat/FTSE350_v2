@@ -252,11 +252,11 @@ img{
 }
 
 .chartStyle {
-  background-color: black;
   padding: 0;
   width: 55%;
   float: left;
-  min-height: 400px;
+  min-height: 310px;
+  margin-top: -40px;
 }
 
 
@@ -270,6 +270,10 @@ img{
   display: none;
 }
 
+.chartInfo{
+  clear: both;
+  color: #979494;
+}
 
 .dataPlaceholder {
   float: left;
@@ -311,6 +315,7 @@ img{
 .data2014 {
 }
 .data2013 {
+  margin-bottom: 0;
 }
 
 
@@ -401,6 +406,7 @@ img{
 
 
 .greenBtn {
+  font-size: 12px;
   float: left;
   padding: 10px 15px 10px 30px;
   color: #FFF !important;
@@ -411,7 +417,7 @@ img{
   background-position: left 3px;
   background-repeat: no-repeat;
   margin-bottom: 15px;
-  min-width: 375px;
+  min-width: 295px;
   display: block;
 }
 
@@ -435,6 +441,22 @@ img{
 .selector{
   float: left;
   margin-right: 1em;
+  position: relative;
+}
+
+.selector:after{
+  content:" ";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 57px;
+
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-top: 5px solid #fff;
 }
 select {
   -moz-appearance: none;
@@ -447,7 +469,21 @@ select {
   padding: 5px 15px 5px 5px;
   outline: none;
   max-width: 535px;
+
+  background: #303030; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMwMzAzMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE5JSIgc3RvcC1jb2xvcj0iIzI5MjkyOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNDA0MDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #303030 0%, #292929 19%, #040404 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303030), color-stop(19%,#292929), color-stop(100%,#040404)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #303030 0%,#292929 19%,#040404 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #303030 0%,#292929 19%,#040404 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #303030 0%,#292929 19%,#040404 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #303030 0%,#292929 19%,#040404 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#040404',GradientType=0 ); /* IE6-8 */
+
 }
+
+
 
 
 input[type="text"],
@@ -711,7 +747,24 @@ h3 {
 
   background: #FFF;
   border-radius: 0;
+  position: relative;
 }
+
+.user-data .input-line label select:after{
+  content:" ";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 57px;
+
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-top: 5px solid #f00;
+}
+
 
 .question{
   float: left;
@@ -872,4 +925,10 @@ h3 {
   min-height: 400px;
   width: 50%;
   float: left;
+}
+
+
+/* Remove amCharts link */
+a[title="JavaScript charts"]{
+  display: none !important;
 }
