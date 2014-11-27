@@ -308,9 +308,12 @@ function getData(){
   var heading2014 = $('.data2014 h4'),
       value2014 = $('.data2014 p'),
       heading2013 = $('.data2013 h4'),
-      value2013 = $('.data2013 p');
+      value2013 = $('.data2013 p'),
+      questionPanel = $("#questionPanel p:first-child"),
+      questionE = $('#questionExplore'),
+      sectorE = $('#sector');
 
-function init(){
+  function init(){
     exploreQuestionChange( 1 );
     rep = exploreSectorChange( 0 );
     // Pass the value stored to my elements
@@ -332,4 +335,38 @@ function init(){
       .html(rep.textSector)
       .fadeIn();
   };
+
+  $(".action-apply").on('click', function(e){
+
+    e.preventDefault();
+    var bQId = 1, sId = 1;
+    bQId = questionE.find("option:selected").val();
+    sId = sectorE.find("option:selected").val();
+
+    exploreQuestionChange( bQId );
+    rep = exploreSectorChange( sId );
+
+    // Explore Update HTML
+    questionPanel
+      .hide()
+      .html(questionE.find("option:selected").text())
+      .fadeIn();
+    heading2014
+      .hide()
+      .html(rep.value2014 + "%")
+      .fadeIn();
+    value2014
+      .hide()
+      .html(rep.text2014)
+      .fadeIn();
+    heading2013
+      .hide()
+      .html(rep.valueSector + "%")
+      .fadeIn();
+    value2013
+      .hide()
+      .html(rep.textSector)
+      .fadeIn();
+
+  });
 
