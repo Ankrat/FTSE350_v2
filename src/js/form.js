@@ -58,12 +58,12 @@ $("#send-data").on('click', function(){
       dataType: "json",
       data: { data : JSON.stringify(dataOBJ) }, //your data
       success: function(){
-        window.location.replace("/benchmark.html");
+        // window.location.replace("/benchmark.html");
         // console.log('success data = ', data);
       }
     });
     // similar behavior as an HTTP redirect
-    // window.location.replace("/benchmark.html");
+    window.location.replace("/benchmark.html");
     // similar behavior as clicking on a link
     // window.location.href = "http://stackoverflow.com";
   }
