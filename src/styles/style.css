@@ -910,6 +910,12 @@ h3 {
 #cardQ3 .question-answer{
   min-height: 225px;
 }
+#cardQ2 .question-answer p:first-child > span,
+#cardQ3 .question-answer p:first-child > span{
+  text-align: justify;
+  display: inline-block;
+  width: 79%
+}
 #cardQ3{}
 #cardQ4{}
 #cardQ5{}
@@ -931,4 +937,70 @@ h3 {
 /* Remove amCharts link */
 a[title="JavaScript charts"]{
   display: none !important;
+}
+
+
+@media print {
+    *:not(.brandingBar),
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    .brandingBar a{
+      color: #FFF !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    img,
+    .card {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+    .main-column img{
+      background-color: #000 !important;
+    }
+
+    text{
+      fill: #000;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }

@@ -144,8 +144,8 @@ function createGraph( qId, sId){
                     "fillAlphas": 0.8,
                     "id": "sector-graph1",
                     "title": "FTSE 350 2014 Your sector",
-                    "lineColor":"#979494",
-                    "fillColors":"#979494",
+                    "lineColor":"#BF3503",
+                    "fillColors":"#BF3503",
                     "lineAlpha": 0.2,
                     "type": "column",
                     "valueField": "answerSector"
@@ -155,7 +155,8 @@ function createGraph( qId, sId){
                   {
                     "axisAlpha": 1,
                     "axisColor":"#FFFFFF",
-                    "color": "#FFFFFF"
+                    "color": "#FFFFFF",
+                    "maximum": 100
                   }
                 ],
                 "legend": {
@@ -199,8 +200,8 @@ function createGraph( qId, sId){
                     "fillAlphas": 0.8,
                     "id": "sector-graph1",
                     "title": "FTSE 350 2014 Your sector",
-                    "lineColor":"#979494",
-                    "fillColors":"#979494",
+                    "lineColor":"#BF3503",
+                    "fillColors":"#BF3503",
                     "lineAlpha": 0.2,
                     "type": "column",
                     "valueField": "answerSector"
@@ -210,7 +211,9 @@ function createGraph( qId, sId){
                   {
                     "axisAlpha": 1,
                     "axisColor":"#FFFFFF",
-                    "color": "#FFFFFF"
+                    "color": "#FFFFFF",
+                    "labelRotation": -30,
+                    "maximum": 100
                   }
                 ],
                 "legend": {
@@ -254,8 +257,8 @@ function createGraph( qId, sId){
                     "fillAlphas": 0.8,
                     "id": "sector-graph1",
                     "title": "FTSE 350 2014 Your sector",
-                    "lineColor":"#979494",
-                    "fillColors":"#979494",
+                    "lineColor":"#BF3503",
+                    "fillColors":"#BF3503",
                     "lineAlpha": 0.2,
                     "type": "column",
                     "valueField": "answerSector"
@@ -265,7 +268,8 @@ function createGraph( qId, sId){
                   {
                     "axisAlpha": 1,
                     "axisColor":"#FFFFFF",
-                    "color": "#FFFFFF"
+                    "color": "#FFFFFF",
+                    "maximum": 100
                   }
                 ],
                 "legend": {
@@ -309,8 +313,8 @@ function createGraph( qId, sId){
                     "fillAlphas": 0.8,
                     "id": "sector-graph1",
                     "title": "FTSE 350 2014 Your sector",
-                    "lineColor":"#979494",
-                    "fillColors":"#979494",
+                    "lineColor":"#BF3503",
+                    "fillColors":"#BF3503",
                     "lineAlpha": 0.2,
                     "type": "column",
                     "valueField": "answerSector"
@@ -321,7 +325,7 @@ function createGraph( qId, sId){
                     "axisAlpha": 1,
                     "axisColor":"#FFFFFF",
                     "color": "#FFFFFF",
-
+                    "maximum": 100
                   }
                 ],
                 "legend": {
@@ -366,7 +370,7 @@ function createGraph( qId, sId){
                 "innerRadius": "60%",
                 "labelText": "",
                 "labelRadius": "10",
-                "baseColor":"#979494",
+                "baseColor":"#BF3503",
                 "brightnessStep": "15",
                 "color": "#FFFFFF",
                 "borderAlpha": 0,
