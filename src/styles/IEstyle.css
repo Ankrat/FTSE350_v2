@@ -1,0 +1,16 @@
+.chartwrapper,
+.exploreData,
+.dataPlaceholder{
+  overflow: visible;
+}
+.chartStyle{
+  margin-top: 0;
+}
+
+select option{
+  color: #343434;
+}
+
+.select:after{
+  content: " ";
+}

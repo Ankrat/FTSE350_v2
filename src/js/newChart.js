@@ -371,3 +371,26 @@ function getData(){
 
   });
 
+  // IE10 fixes conditional comment
+  var isIE10 = false;
+  /*@cc_on
+      if (/^10/.test(@_jscript_version)) {
+          isIE10 = true;
+      }
+  @*/
+  console.log(isIE10);
+  if( isIE10 ){
+    applyCSS();
+  }
+
+  function applyCSS(){
+    $(".chartStyle").css("margin-top", "0");
+    $(".chartwrapper").css("overflow", "visible");
+    $(".exploreData").css("overflow", "visible");
+    $(".dataPlaceholder").css("overflow", "visible");
+
+    $("select option").css( "color" , "#343434");
+
+    $(".select:after").css( "content", " ");
+  }
+
