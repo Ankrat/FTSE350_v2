@@ -30,9 +30,9 @@ var gaugeChart = AmCharts.makeChart("chartdiv",{
          "bold":true,
          "color":"#3D9CDC",
          "id":"Label2014",
-         "text":"2014",
-         "size":36,
-         "x": 185,
+         "text":"2014 results - all sectors",
+         "size":18,
+         "x": 112,
          "y": 200
       }
     ]
@@ -274,7 +274,6 @@ function getData(){
 
       // Select the highest value in this sectors for this question
       if( parseInt(sId) !== 0 ){
-
         _.each( selectedQuestion.answers, function(answer){
 
           var sectorSelected = _.find( answer.sectors, function(sector){
