@@ -181,7 +181,9 @@ function createGraph( qId, sId){
                   "gridAlpha": 0,
                   "position":"left",
                   "axisColor":"#FFFFFF",
-                  "color": "#FFFFFF"
+                  "color": "#FFFFFF",
+                  "autoRotateAngle": 60,
+                  "autoRotateCount": 1
                 },
                 "graphs": [
                   {
@@ -212,7 +214,6 @@ function createGraph( qId, sId){
                     "axisAlpha": 1,
                     "axisColor":"#FFFFFF",
                     "color": "#FFFFFF",
-                    "labelRotation": -30,
                     "maximum": 100
                   }
                 ],
@@ -238,7 +239,9 @@ function createGraph( qId, sId){
                   "gridAlpha": 0,
                   "position":"left",
                   "axisColor":"#FFFFFF",
-                  "color": "#FFFFFF"
+                  "color": "#FFFFFF",
+                  "autoRotateAngle": 60,
+                  "autoRotateCount": 1
                 },
                 "graphs": [
                   {

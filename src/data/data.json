@@ -6,7 +6,7 @@
       "answers":[
         {
           "answerId": 1,
-          "answerText":"Poorly described: to a general board audience, the implications for the company of the risks identified are not at all clear",
+          "answerText":"Poorly described",
           "answerTotal2013":"31",
           "answerTotal2014":"6",
           "sectors":[
@@ -56,7 +56,7 @@
         },
         {
           "answerId": 2,
-          "answerText":"Reasonably described: to a general board audience, the implications for the company of the risks identified are described in a basic manner",
+          "answerText":"Reasonably described",
           "answerTotal2013":"107",
           "answerTotal2014":"72",
           "sectors":[
@@ -106,7 +106,7 @@
         },
         {
           "answerId": 3,
-          "answerText":"Clearly described: to a general board audience, the implications for the company of the risks identified are comprehensive",
+          "answerText":"Clearly described",
           "answerTotal2013":"43",
           "answerTotal2014":"22",
           "sectors":[

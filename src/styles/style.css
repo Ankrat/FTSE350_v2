@@ -672,6 +672,11 @@ h3 {
   margin-top: 25px;
 }
 
+.disclaimer{
+  color: #B2B2B2;
+  font-size: 11px;
+}
+
 /* Question panel css */
 .questionPanel {
   position: relative;
