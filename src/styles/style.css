@@ -444,6 +444,7 @@ img{
   position: relative;
 }
 
+div.selector::after,
 .selector:after{
   content:" ";
   display: block;
@@ -510,6 +511,8 @@ label span {
   margin: 1em 0 0.5em 0;
   color: #FFF;
 }
+.disclaimer.input-line input[type="checkbox"]{ float: left;}
+.disclaimer.input-line span{ margin: -3px 0 5px 20px; }
 
 
 /* blog style amends */

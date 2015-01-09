@@ -3,7 +3,8 @@ var name         ,
     company      ,
     email        ,
     subject      ,
-    subjectVal   ;
+    subjectVal   ,
+    hasAgreed    ;
 
 // user-answers
 var questionQ1   ,
@@ -24,6 +25,7 @@ $("#send-data").on('click', function(){
   email        = $("#email").val();
   subject      = $("#subject").find('option:selected').text();
   subjectVal   = $("#subject").find('option:selected').val();
+  hasAgreed    = $("#hasAgreed").is(':checked');
 
   questionQ1   = $("#questionQ1").text();
   questionQ2   = $("#questionQ2").text();
@@ -167,6 +169,7 @@ function createFile(){
   file.push({ userCompany : company});
   file.push({ userEmail : email});
   file.push({ userSubject : subject});
+  file.push({ userHasAgreed : hasAgreed});
 
   console.log( "file = ", file);
 

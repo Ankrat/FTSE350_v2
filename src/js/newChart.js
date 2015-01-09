@@ -383,8 +383,10 @@ function getData(){
   }
 
   function applyCSS(){
+    $(".selector").css("margin-right", "0.5em");
+    $(".selector:after").css("display", "none");
     $(".chartStyle").css("margin-top", "0");
-    $(".chartwrapper").css("overflow", "visible");
+    $(".chartWrapper").css("overflow", "visible");
     $(".exploreData").css("overflow", "visible");
     $(".dataPlaceholder").css("overflow", "visible");
 
