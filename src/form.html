@@ -68,13 +68,13 @@
     </header>
     <div class="columnWrapper">
       <section class="main-column">
-        <img src="img/FTSE350title.png" alt="FTSE 350" />
+        <img src="img/FTSE350title.png" alt="FTSE 350" height="64px" />
 
         <div class="tabWrapper" id="tab-wrapper">
           <ul>
             <li><a href="explore.html">Explore the top issues and trends</a>
             </li>
-            <li class="active"><a href="form.html" class="active">Benchmark against your company</a>
+            <li class="active"><a href="form.html" class="active">Benchmark your company</a>
             </li>
           </ul>
           <!-- Benchmark Tab -->
@@ -99,8 +99,8 @@
                 <div class="input-line">
                   <p>
                     <label for="company">
-                      <span> Company</span>
-                      <input id="company" type="text" name="company" placeholder="Your company name" />
+                      <span> Organisation</span>
+                      <input id="company" type="text" name="company" placeholder="Your organisation name" />
                     </label>
                   </p>
                 </div>
@@ -133,6 +133,19 @@
                   </p>
                 </div>
               </fieldset>
+
+              <div class="disclaimer input-line">
+              <p class="tickbox">
+                <label for="agreement">
+                  <input type="checkbox" id="hasAgreed" data-content="hasAgreed" name="agreement"  />
+                  <span>We will use your details so that a member of our team can get in contact with you and to discuss your submission. If you do not wish to be contacted then please tick the box</span>
+                </label>
+                </p>
+                <p>Any information submitted will be analysed and presented in an aggregated format, and neither you nor your company will be mentioned as having participated.
+                From time to time KPMG LLP will collect and verify your contact details in order that we provide you with information on KPMG’s services. This information collected will be processed through a server located in the UK. By providing us with this information, you will be deemed to have consented to collection and processing of your data as described above.
+                </p>
+
+              </div>
 
               <!-- User Answers -->
               <h4>Now, answer the questions to benchmark your performance:</h4>
@@ -215,16 +228,6 @@
                 <button class="action-apply" value="Submit and view your results" id="send-data">Submit and view your results</button>
               </div>
 
-              <div class="disclaimer input-line">
-                <p>
-                <label for="agreement">
-                  <input type="checkbox" id="hasAgreed" data-content="hasAgreed" name="agreement"  />
-                  <span>Any information submitted will be analysed and presented in an aggregated format, and neither you nor your company will be mentioned as having participated.</span>
-                  <span>From time to time KPMG LLP will collect and verify your contact details in order that we provide you with information on KPMG’s services. This information collected will be processed through a server located in the UK. By providing us with this information, you will be deemed to have consented to collection and processing of your data as described above.</span>
-                </label>
-                </p>
-              </div>
-
             </div>
           </div>
           <!-- /Benchmark Tab -->
@@ -265,7 +268,7 @@
           </div>
         </div>
         <div class="footerLegalese">
-          <p>© 2012 KPMG LLP, a UK limited liability partnership, is a subsidiary of KPMG Europe LLP and a member firm of the KPMG network of independent member firms affiliated with KPMG International Cooperative, a Swiss entity. All rights reserved. KPMG International Cooperative ("KPMG International") is a Swiss entity. Member firms of the KPMG network of independent firms are affiliated with KPMG International. KPMG International provides no client services. No member firm has any authority to obligate or bind KPMG International or any other member firm vis-à-vis third parties, nor does KPMG International have any such authority to obligate or bind any member firm.
+          <p>© 2015 KPMG LLP, a UK limited liability partnership, is a subsidiary of KPMG Europe LLP and a member firm of the KPMG network of independent member firms affiliated with KPMG International Cooperative, a Swiss entity. All rights reserved. KPMG International Cooperative ("KPMG International") is a Swiss entity. Member firms of the KPMG network of independent firms are affiliated with KPMG International. KPMG International provides no client services. No member firm has any authority to obligate or bind KPMG International or any other member firm vis-à-vis third parties, nor does KPMG International have any such authority to obligate or bind any member firm.
           </p>
         </div>
       </div>
