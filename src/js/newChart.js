@@ -385,6 +385,7 @@ function getData(){
   function applyCSS(){
     $(".selector").css("margin-right", "0.5em");
     $(".selector:after").css("display", "none");
+    $(".selector:after").css("top", "74px");
     $(".chartStyle").css("margin-top", "0");
     $(".chartWrapper").css("overflow", "visible");
     $(".exploreData").css("overflow", "visible");

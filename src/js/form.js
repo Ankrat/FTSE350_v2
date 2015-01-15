@@ -200,3 +200,19 @@ function init(){
 };
 
 init();
+
+// IE10 fixes conditional comment
+  var isIE10 = false;
+  /*@cc_on
+      if (/^10/.test(@_jscript_version)) {
+          isIE10 = true;
+      }
+  @*/
+  console.log(isIE10);
+  if( isIE10 ){
+    applyCSS();
+  }
+
+  function applyCSS(){
+    $(".input-line.disclaimer span").css("margin-top", "-23px");
+  }

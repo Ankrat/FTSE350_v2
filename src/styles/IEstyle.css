@@ -1,3 +1,14 @@
+.welcomeImage{
+  width: 220px;
+}
+.welcomeText,
+.cyberStrapline{
+  width: 610px;
+}
+.welcomeLinks .greenBtn {
+  float: initial;
+  width: 295px;
+}
 .chartWrapper,
 .exploreData,
 .dataPlaceholder{
@@ -13,4 +24,8 @@ select option{
 
 .select:after{
   content: " ";
+}
+
+.input-line.disclaimer span{
+  margin-top: -23px;
 }
