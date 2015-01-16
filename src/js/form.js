@@ -116,31 +116,31 @@ function validateForm(){
   }
   if( _.isEmpty( $(answerQ1).data("content") ) ){
     fieldError.answerQ1 = true;
-    fieldError.msg += "Answer the question 1\n";
+    fieldError.msg += "Please answer question 1\n";
   }else{
     fieldError.answerQ1 = false;
   }
   if( _.isEmpty( $(answerQ2).data("content") ) ){
     fieldError.answerQ2 = true;
-    fieldError.msg += "Answer the question 2\n";
+    fieldError.msg += "Please answer question 2\n";
   }else{
     fieldError.answerQ2 = false;
   }
   if( _.isEmpty( $(answerQ3).data("content") ) ){
     fieldError.answerQ3 = true;
-    fieldError.msg += "Answer the question 3\n";
+    fieldError.msg += "Please answer question 3\n";
   }else{
     fieldError.answerQ3 = false;
   }
   if( _.isEmpty( $(answerQ4).data("content") ) ){
     fieldError.answerQ4 = true;
-    fieldError.msg += "Answer the question 4\n";
+    fieldError.msg += "Please answer question 4\n";
   }else{
     fieldError.answerQ4 = false;
   }
   if( _.isEmpty( $(answerQ5).data("content") ) ){
     fieldError.answerQ5 = true;
-    fieldError.msg += "Answer the question 5\n";
+    fieldError.msg += "Please answer question 5\n";
   }else{
     fieldError.answerQ5 = false;
   }

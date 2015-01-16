@@ -199,6 +199,9 @@ img{
   max-width: 100%;
 }
 
+.brandingBarSearch input[type=text]{
+  height: 1.6em;
+}
 .clearfix:before,
 .clearfix:after{
   content: " ";
