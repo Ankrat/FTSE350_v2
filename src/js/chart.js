@@ -4,9 +4,8 @@ var gaugeChart = AmCharts.makeChart("chartdiv",{
     "type":"gauge",
     "pathToImages":"http://cdn.amcharts.com/lib/3/images/",
     "faceBorderWidth":0,
-    "backgroundAlpha":0,
     "color":"#FFFFFF",
-    "height": 276,
+    "theme":"dark",
     "arrows":[
       {
          "alpha":0,
@@ -23,35 +22,102 @@ var gaugeChart = AmCharts.makeChart("chartdiv",{
          "id":"GaugeAxis2014",
          "tickThickness":0,
          "labelFrequency":0
+      },
+      {
+         "axisThickness":0,
+         "startAngle":-90,
+         "endAngle":90,
+         "startValue":0, // 0%
+         "endValue":100, // 100%
+         "id":"GaugeAxis2013",
+         "tickThickness":0,
+         "labelFrequency":0
       }
     ],
     "allLabels":[
       {
          "bold":true,
+         "color":"#DD4815",
+         "id":"Label2013",
+         "text":"2013",
+         "size":14,
+         "x": 96,
+         "y": 310
+      },
+      {
+         "bold":true,
          "color":"#3D9CDC",
          "id":"Label2014",
-         "text":"2014 results - all sectors",
-         "size":18,
-         "x": 112,
-         "y": 200
+         "text":"2014",
+         "size":14,
+         "x": 38,
+         "y": 310
       }
     ]
   }
 );
 
+// gaugeChart.exportConfig = {
+
+//   menuTop: '0',
+//   menuLeft: 'auto',
+//   menuRight: '0px',
+//   menuBottom: 'auto',
+//   menuItems: [{
+//       textAlign: 'center',
+//       onclick: function () {},
+//       icon: 'img/export.png',
+//       iconTitle: 'Save chart as an image',
+//       items: [{
+//           title: 'JPG',
+//           format: 'jpg'
+//       }, {
+//           title: 'PNG',
+//           format: 'png'
+//       }, {
+//           title: 'SVG',
+//           format: 'svg'
+//       } ,{
+//       title: 'PDF',
+//       format: 'pdf'
+//       }]
+//   }],
+//   menuItemOutput:{
+//       fileName:"amChart"
+//   },
+//   menuItemStyle: {
+//       backgroundColor: '#FFF',
+//       rollOverBackgroundColor: '#EFEFEF',
+//       color: '#000000',
+//       rollOverColor: '#CC0000',
+//       paddingTop: '6px',
+//       paddingRight: '6px',
+//       paddingBottom: '6px',
+//       paddingLeft: '6px',
+//       marginTop: '0px',
+//       marginRight: '0px',
+//       marginBottom: '0px',
+//       marginLeft: '0px',
+//       textAlign: 'left',
+//       textDecoration: 'none'
+//   }
+// };
+
 
 var list = false, // Determine if data.json has been loaded
     qData,  // Store the data.json
     selectedQuestion,
-    color2014 = ["#52ACE1","#99C9E6","#3B7BA1","#76CCFF","#3F85AE","#244B61","#78B8D1"],
-    answerTotal2014 = 0,
+    color2013 = ["#F0B7AB","#E89281","#E16F59","#DD4815","#C34328","#AB3B23"],
+    color2014 = ["#B5D8EF","#91C4E7","#6EB2DF","#3D9CDC","#3F8DC1","#387EAC"],
+    answerTotal2013 = 0, answerTotal2014 = 0,
     // Variable to manage the bands created on change
-    bandTmp2014 = [], bandToAdd2014 = [];
+    bandTmp2013 = [], bandTmp2014 = [],
+    bandToAdd2013 = [], bandToAdd2014 = [];
 
 if( !list ) getData();
 
 function getData(){
-  var URL = "data/data.json";
+var URL = "/data/data.json";
 
   var jqxhr = $.ajax({
       url:URL,
@@ -108,8 +174,11 @@ function getData(){
    * @description: rset my variables to default
    */
   function resetData(){
+    bandToAdd2013 = [];
     bandToAdd2014 = [];
+    bandTmp2013 = [];
     bandTmp2014 = [];
+    answerTotal2013 = 0;
     answerTotal2014 = 0;
   };
 
@@ -166,13 +235,18 @@ function getData(){
 
     findBand( selectedQuestion );
 
+    var axis2013 = createAxis( bandToAdd2013 );
+        axis2013.id= "GaugeAxis2013";
+
     var axis2014 = createAxis( bandToAdd2014 );
         axis2014.id="GaugeAxis2014";
 
+    gaugeChart.addAxis(axis2013);
     gaugeChart.addAxis(axis2014);
+    // axisStore.push(axis2014);
     gaugeChart.validateNow();
 
-    return selectedQuestion;
+    return;
   };
 
   /*
@@ -185,12 +259,15 @@ function getData(){
   function findBand( question ){
 
     _.each( question.answers, function(answer){
+      bandTmp2013.push( { val: answer.answerTotal2013, text: answer.answerText} );
       bandTmp2014.push( { val: answer.answerTotal2014, text: answer.answerText} );
+      answerTotal2013 += parseInt(answer.answerTotal2013) || 0;
       answerTotal2014 += parseInt(answer.answerTotal2014) || 0;
     });
 
     // Once band20XX are created,
     // Generate the "bands" property for the graph
+    bandToAdd2013 = generateBand( bandTmp2013, color2013 );
     bandToAdd2014 = generateBand( bandTmp2014, color2014 );
     return;
   }
@@ -211,9 +288,16 @@ function getData(){
     var answerTotal, bandRadius, bandInnerRadius,
         bandStartValue = 0, bandEndValue;
 
+    // Graph Properties corresponding to the year, not the data
+    if( arrayColor === color2014 ){
       bandRadius = "100%";
-      bandInnerRadius = "70%";
+      bandInnerRadius = "80%";
       answerTotal = parseInt(answerTotal2014);
+    }else{
+      bandRadius = "55%";
+      bandInnerRadius = "75%";
+      answerTotal = parseInt(answerTotal2013);
+    }
 
     // create the GaugeBand properties from JSON data
     _.each( band , function( b, index ){
@@ -221,7 +305,7 @@ function getData(){
       bandEndValue = ( parseInt(b.val) / answerTotal ) * 100 ;
       obj.id = "band_"+index;
       obj.balloonText = b.text + " " + bandEndValue.toFixed(0) + "%";
-      obj.color = arrayColor[index];
+      obj.color = arrayColor[index ];
       obj.startValue = bandStartValue;
       obj.endValue = bandStartValue + bandEndValue;
       obj.radius = bandRadius;
@@ -251,71 +335,83 @@ function getData(){
   */
   function exploreSectorChange( sId ){
     // Need to have a question selected beforehand
-    var thisQID = $("#questionExplore option:selected").val(),
-        maxAnswer, answerTotal = 0, indexMaxAnswer,
-        allAnswersForThisSector = [], highestSector, indexSector;
-    var response = {};
-
+    var thisQID = $("#questionExplore option:selected").val();
+    console.log( "thisQID", thisQID);
+    console.log( "thissId", sId);
     if( parseInt(thisQID) === 0 ){
       alert("You have to pick a question first");
     }else{
+      // Select the highest value in this sector for this question
+      var highestValue2013, highestValue2014, allAnswerSector = [];
 
-      // Select the highest value in all sectors for this question
-      // where answerTotal2014 is max => % of answer
-      _.each( selectedQuestion.answers, function( answer ){
-        answerTotal += parseInt(answer.answerTotal2014);
-      });
-      maxAnswer = _.max( selectedQuestion.answers, function( answer, index ){
-        return answer.answerTotal2014;
-      });
-      indexMaxAnswer = _.indexOf( selectedQuestion.answers, maxAnswer );
-      response.value2014 = (parseInt(maxAnswer.answerTotal2014) / parseInt(answerTotal) * 100).toFixed(0);
-      response.text2014 = selectedQuestion.answers[indexMaxAnswer].answerText;
+      _.each( selectedQuestion.answers, function(answer){
 
-      // Select the highest value in this sectors for this question
-      if( parseInt(sId) !== 0 ){
-        _.each( selectedQuestion.answers, function(answer){
-
-          var sectorSelected = _.find( answer.sectors, function(sector){
-            return parseInt(sector.sectorId) === parseInt(sId);
-          });
-
-          allAnswersForThisSector.push(sectorSelected);
+        var sectorSelected = _.find( answer.sectors, function(sector){
+          // var thisText = answer.answerText;
+          return parseInt(sector.sectorId) === parseInt(sId);
         });
-        highestSector = _.max( allAnswersForThisSector, function( sector ){
-          return sector.sectorTotal2014;
-        });
-        // Find Answer ID corresponding to this highest value
-        // to write text
-        indexSectorAnswer = _.indexOf( allAnswersForThisSector, highestSector );
+        allAnswerSector.push(sectorSelected);
+      });
+      var index2013;
+      highestValue2013 = _.max( allAnswerSector, function( sector, index ){
+        return sector.sectorTotal2013;
+      });
+      // Find Answer ID corresponding to this highest value
+      // to write text
+      index2013 = _.indexOf( allAnswerSector, highestValue2013 );
 
-        var numberOfAnswers = parseInt(selectedQuestion.answers[indexSectorAnswer].answerTotal2014);
-        var numberOfAnswersInThisSector = parseInt( selectedQuestion.answers[indexSectorAnswer].sectors[ parseInt(sId) - 1 ].sectorTotal2014) ;
+      highestValue2014 = _.max( allAnswerSector, function( sector ){
+        return sector.sectorTotal2014;
+      });
+      index2014 = _.indexOf( allAnswerSector, highestValue2014 );
 
-        response.valueSector = ( (numberOfAnswersInThisSector * 100) / numberOfAnswers ).toFixed(0);
-        response.textSector = selectedQuestion.answers[indexSectorAnswer].answerText;
-      }else{
-        // same as answerTotal2014 is max
-        response.valueSector = response.value2014
-        response.textSector = response.text2014;
-      }
+      var response = {};
+      response.value2013 = (parseInt(highestValue2013.sectorTotal2013) / parseInt(selectedQuestion.answers[index2013].answerTotal2013) * 100).toFixed(0);
+      response.text2013 = selectedQuestion.answers[index2013].answerText;
+      response.value2014 = (parseInt(highestValue2014.sectorTotal2014) / parseInt(selectedQuestion.answers[index2014].answerTotal2014) * 100).toFixed(0);
+      response.text2014 = selectedQuestion.answers[index2014].answerText;
+      console.log("response = ", response);
       return response;
     }
   };
+
+// ================
+// Tab Benchmark
+// ================
+
+  // Question selection
+  // Will trigger a change of reference
+  // to compare your answers against
+  // only show highest result of this question
+  //
+  // Sector result from your sector selection in the form
+
+
+  /*
+  * Each Question answers
+  * Will trigger a text update in the graph
+  *
+  */
+
+  /*
+  * Apply Selection
+  * Fill in the form to see the updated graph
+  * Send data to email...
+  */
+
+
 
 
 // Store the DOM elements needed
   var heading2014 = $('.data2014 h4'),
       value2014 = $('.data2014 p'),
       heading2013 = $('.data2013 h4'),
-      value2013 = $('.data2013 p'),
-      questionPanel = $("#questionPanel p:first-child"),
-      questionE = $('#questionExplore'),
-      sectorE = $('#sector');
+      value2013 = $('.data2013 p');
 
-  function init(){
+function init(){
     exploreQuestionChange( 1 );
-    rep = exploreSectorChange( 0 );
+    rep = exploreSectorChange( 1 );
+
     // Pass the value stored to my elements
     // to update their content accordingly
     heading2014
@@ -328,82 +424,11 @@ function getData(){
       .fadeIn();
     heading2013
       .hide()
-      .html(rep.valueSector + "%")
+      .html(rep.value2013 + "%")
       .fadeIn();
     value2013
       .hide()
-      .html(rep.textSector)
+      .html(rep.text2013)
       .fadeIn();
   };
-
-  $(".action-apply").on('click', function(e){
-
-    e.preventDefault();
-    var bQId = 1, sId = 1;
-    bQId = questionE.find("option:selected").val();
-    sId = sectorE.find("option:selected").val();
-
-    exploreQuestionChange( bQId );
-    rep = exploreSectorChange( sId );
-
-    // Explore Update HTML
-    questionPanel
-      .hide()
-      .html(questionE.find("option:selected").text())
-      .fadeIn();
-    heading2014
-      .hide()
-      .html(rep.value2014 + "%")
-      .fadeIn();
-    value2014
-      .hide()
-      .html(rep.text2014)
-      .fadeIn();
-    heading2013
-      .hide()
-      .html(rep.valueSector + "%")
-      .fadeIn();
-    value2013
-      .hide()
-      .html(rep.textSector)
-      .fadeIn();
-
-  });
-
-  // IE10 fixes conditional comment
-  function getInternetExplorerVersion(){
-    var rv = -1;
-    if (navigator.appName == 'Microsoft Internet Explorer')    {
-      var ua = navigator.userAgent;
-      var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-      if (re.exec(ua) != null)
-        rv = parseFloat( RegExp.$1 );
-    } else if (navigator.appName == 'Netscape'){
-      var ua = navigator.userAgent;
-      var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
-      if (re.exec(ua) != null)
-        rv = parseFloat( RegExp.$1 );
-    }
-    return rv;
-  }
-  var r = getInternetExplorerVersion();
-  console.log(r);
-
-  if( r >= 10 ){
-    applyCSS();
-  }
-
-  function applyCSS(){
-    $(".selector").css("margin-right", "0.5em");
-    $(".selector:after").css("display", "none");
-    $(".selector:after").css("top", "74px");
-    $(".chartStyle").css("margin-top", "0");
-    $(".chartWrapper").css("overflow", "visible");
-    $(".exploreData").css("overflow", "visible");
-    $(".dataPlaceholder").css("overflow", "visible");
-
-    $("select option").css( "color" , "#343434");
-
-    $(".select:after").css( "content", " ");
-  }
 
