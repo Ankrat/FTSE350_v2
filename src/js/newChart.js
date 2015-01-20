@@ -387,8 +387,12 @@ function getData(){
     return rv;
   }
   var r = getInternetExplorerVersion();
-  console.log(r);
 
+  var ua = window.navigator.userAgent;
+  var isChromeOnWindows = (ua.indexOf("Chrome") > -1) && (ua.indexOf("Windows") > -1);
+  if( isChromeOnWindows ){
+    $(".selector select").css("color", "#999");
+  }
   if( r >= 10 ){
     applyCSS();
   }

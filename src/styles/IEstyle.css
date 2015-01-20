@@ -6,7 +6,7 @@
   width: 610px;
 }
 .welcomeLinks .greenBtn {
-  float: initial;
+  float: none;
   width: 295px;
 }
 .chartWrapper,
