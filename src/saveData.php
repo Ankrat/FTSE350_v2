@@ -9,9 +9,11 @@
     $f = fopen($_SERVER['DOCUMENT_ROOT'] . "/export/dataReceived_" . $dateString . ".json","w+");
     fwrite($f, $data);
     fclose($f);
+    echo "";
     // header("Location: http://$host/$extra");
   }else{
     //handle error
   }
+  exit()
 
 ?>

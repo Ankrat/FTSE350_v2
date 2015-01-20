@@ -59,13 +59,24 @@ $("#send-data").on('click', function(){
       url: redirectURL, //url of file's receiver on server
       dataType: "json",
       data: { data : JSON.stringify(dataOBJ) }, //your data
-      success: function(){
+      crossDomain: true, // force a crossDomain request (such as JSONP) on the same domain
+      success: function( d , ts, xhr ){
+        window.location.replace("/benchmark.html");
+        // console.log('data sent = ', data);
+        console.log('success data = ', d);
+        console.log('success textStatus= ', ts);
+        console.log('success xhr= ', xhr);
+      },
+      error: function( xhr, ts, errorThrown ){
         // window.location.replace("/benchmark.html");
-        // console.log('success data = ', data);
+        // console.log('data sent = ', data);
+        console.log('error errorThrown = ', errorThrown);
+        console.log('error textStatus= ', ts);
+        console.log('error xhr= ', xhr);
       }
     });
     // similar behavior as an HTTP redirect
-    window.location.replace("/benchmark.html");
+    // window.location.replace("/benchmark.html");
     // similar behavior as clicking on a link
     // window.location.href = "http://stackoverflow.com";
   }
