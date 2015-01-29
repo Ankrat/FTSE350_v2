@@ -182,6 +182,14 @@ function createFile(){
   file.push({ userSubject : subject});
   file.push({ userHasAgreed : hasAgreed});
 
+  // Need to parse pageRefere to find the one
+  var page = JSON.parse(sessionStorage.getItem("page")),
+      pageLength = page.length,
+      KPMG_URL = document.hostname;
+    if( (page.refereIndex).indexOf(KPMG_URL) == -1  ) file.push({ beforeIndex : page.refereIndex});
+    if( (page.refereExplore).indexOf(KPMG_URL) == -1 ) file.push({ beforeExplore : page.refereExplore});
+    if( (page.refereForm).indexOf(KPMG_URL) == -1 ) file.push({ beforeBenchmark : page.refereForm});
+
   console.log( "file = ", file);
 
   return file;
