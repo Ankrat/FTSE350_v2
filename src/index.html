@@ -13,31 +13,6 @@
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
   <!--[if IE ]><link rel="stylesheet" type="text/css" href="styles/IEstyle.css" /><![endif]-->
 
-  <script>
-      function appendResults(text) {
-        var results = document.getElementById('results');
-        results.appendChild(document.createElement('P'));
-        results.appendChild(document.createTextNode(text));
-      }
-
-      function makeRequest() {
-        var request = gapi.client.urlshortener.url.get({
-          'shortUrl': 'http://goo.gl/fbsS'
-        });
-        request.then(function(response) {
-          appendResults(response.result.longUrl);
-        }, function(reason) {
-          console.log('Error: ' + reason.result.error.message);
-        });
-      }
-
-      function init() {
-        gapi.client.setApiKey('YOUR API KEY');
-        gapi.client.load('urlshortener', 'v1').then(makeRequest);
-      }
-  </script>
-  <script src="https://apis.google.com/js/client.js?onload=init"></script>
-
 </head>
 
 <body class="home blog">
@@ -123,7 +98,7 @@
         </div>
 
         <div class="disclaimer">
-          <p>The 2014 Cyber Governance Health Check (‘The Tracker’) assesses and reports levels of cyber security awareness and preparedness across the FTSE 350, from a governance perspective. Under the Government’s National Cyber Security Programme and Strategy, the Department for Business, Innovation and Skills is working in collaboration with business advisory firms to develop and manage the Tracker process. This tool gives a comparison of your company’s answers to a subset of the FTSE 350 Cyber Governance Health Check Survey in 2014 and 2013 with the aggregate results for both years.</p>
+          <p>The 2014 Cyber Governance Health Check (‘The Tracker’) assesses and reports levels of cyber security awareness and preparedness across the FTSE 350, from a governance perspective. Under the Government’s National Cyber Security Programme and Strategy, the Department for Business, Innovation and Skills is working in collaboration with business advisory firms to develop and manage the Tracker process.</p>
 
           <p>This exercise is not intended to provide an opinion about the effectiveness of security controls at individual participants nor the index as a whole.</p>
 
